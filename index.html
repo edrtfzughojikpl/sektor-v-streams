@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sektor-V Streams</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .stream {
+      text-align: center;
+      min-width: 320px;
+      margin: 0 5px;
+    }
+
+    .offline-lable {
+      position: relative;
+      top: 90px;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    const rootElement = document.getElementById("root");
+
+    socket.on('some event', (data) => {
+      console.log(data);
+      if (!data) return;
+      root.innerHTML = "";
+      let streams = data.streams;
+      streams.forEach(_stream => {
+        const user = _stream.user;
+        const stream = _stream.stream.stream;
+        const char = _stream.data.character;
+        let div = document.createElement("div");
+        let html =
+          `<div class="username">${user.display_name}</div>` +
+          `<div class="channel-link"><a href="https://www.twitch.tv/${user.name}">www.twitch.tv/${user.name}</a></div>` +
+          `<div class="char-name">${char}</div>`;
+        html = html.concat((stream) ? `<img src=${stream.preview.medium}>` :
+          `<div class="offline-lable">Steam is OFFLINE</div>`);
+        div.innerHTML = html;
+        div.className = "stream";
+        root.appendChild(div);
+      });
+    });
+  </script>
+</body>
+
+</html>
