@@ -26,8 +26,9 @@
     }
 
     .wrapper {
+      position: relative;
       width: 275px;
-      height: 275px;
+      height: 425px;
       background: #151515;
       border-radius: 10px;
       padding: 20px 20px 20px 20px;
@@ -55,14 +56,27 @@
       box-shadow: 0 13px 26px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
     }
 
-    .wrapper .profile .name {
+    h3 {
+      height: 20px;
+    }
+
+    p {
+      height: 25px;
+    }
+
+    .wrapper .profile .name::before {
       color: #772ce8;
       font-size: 16px;
       font-weight: 600;
+      content: attr(data-name);
+      position: relative;
+      display: inline-block;
+      width: 100%;
       text-align: center;
+      height: 20px;
     }
 
-    .wrapper .profile .title {
+    .wrapper .profile .title::before {
       color: #7c8097;
       font-size: 0.75em;
       font-weight: 300;
@@ -71,9 +85,15 @@
       padding-bottom: 0.7em;
       letter-spacing: 1.5px;
       text-transform: uppercase;
+      content: attr(data-title);
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      height: 25px;
     }
 
-    .wrapper .profile .btn {
+    .wrapper .profile .btn::before {
       color: #fff;
       height: 42px;
       outline: none;
@@ -89,61 +109,250 @@
       text-decoration: none;
       text-align: center;
       line-height: 42px;
+      content: attr(data-link);
+      position: relative;
     }
-    .wrapper .offline-lable{
+
+    .wrapper .offline-lable {
       color: #7c8097;
-      font-size: 0.75em;
+      font-size: 0.85em;
       font-weight: 300;
       text-align: center;
       padding-top: 0.5em;
       padding-bottom: 0.7em;
       letter-spacing: 1.5px;
     }
+
+    .wrapper .offline-lable img {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      height: 145px;
+    }
+  </style>
+
+  <style>
+    .lds-spinner {
+      color: official;
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .lds-spinner div {
+      transform-origin: 40px 40px;
+      animation: lds-spinner 1.2s linear infinite;
+    }
+
+    .lds-spinner div:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 37px;
+      width: 6px;
+      height: 18px;
+      border-radius: 20%;
+      background: #fff;
+    }
+
+    .lds-spinner div:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -1.1s;
+    }
+
+    .lds-spinner div:nth-child(2) {
+      transform: rotate(30deg);
+      animation-delay: -1s;
+    }
+
+    .lds-spinner div:nth-child(3) {
+      transform: rotate(60deg);
+      animation-delay: -0.9s;
+    }
+
+    .lds-spinner div:nth-child(4) {
+      transform: rotate(90deg);
+      animation-delay: -0.8s;
+    }
+
+    .lds-spinner div:nth-child(5) {
+      transform: rotate(120deg);
+      animation-delay: -0.7s;
+    }
+
+    .lds-spinner div:nth-child(6) {
+      transform: rotate(150deg);
+      animation-delay: -0.6s;
+    }
+
+    .lds-spinner div:nth-child(7) {
+      transform: rotate(180deg);
+      animation-delay: -0.5s;
+    }
+
+    .lds-spinner div:nth-child(8) {
+      transform: rotate(210deg);
+      animation-delay: -0.4s;
+    }
+
+    .lds-spinner div:nth-child(9) {
+      transform: rotate(240deg);
+      animation-delay: -0.3s;
+    }
+
+    .lds-spinner div:nth-child(10) {
+      transform: rotate(270deg);
+      animation-delay: -0.2s;
+    }
+
+    .lds-spinner div:nth-child(11) {
+      transform: rotate(300deg);
+      animation-delay: -0.1s;
+    }
+
+    .lds-spinner div:nth-child(12) {
+      transform: rotate(330deg);
+      animation-delay: 0s;
+    }
+
+    @keyframes lds-spinner {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <div class="wrapper" data-isPlaceholder="true" style="display: none">
+      <div class="profile">
+        <div class="thumbnail">
+          <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <h3 class="name" data-name=""></h3>
+        <p class="title" data-title=""></p>
+        <a class="btn" href="#" data-link=""></a>
+      </div>
+      <div class="offline-lable">Steam is OFFLINE
+        <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145">
+      </div>
+    </div>
+  </div>
 
   <script src="/socket.io/socket.io.js"></script>
   <script>
     var socket = io();
+
+
     const rootElement = document.getElementById("root");
+    const Placeholder = document.querySelector(".wrapper");
 
-    socket.on('some event', (data) => {
-      console.log(data);
-      if (!data) return;
-      root.innerHTML = "";
-      let streams = data.streams;
-      streams.forEach(_stream => {
-        const user = _stream.user;
-        const stream = _stream.stream.stream;
-        const char = _stream.data.character;
-        let div = document.createElement("div");
+    const createNewCard = (channel) => {
+      let element = Placeholder.cloneNode(true);
+      element.style.display = "block";
+      let thumbnailDiv = element.querySelector(".thumbnail");
+      let displaynameDiv = element.querySelector(".name");
+      let charnameDiv = element.querySelector(".title");
+      let linkAHref = element.querySelector(".btn");
 
-        let html =
-          `<div class="profile">` +
-          `<img
-          src="${user.logo}"
-          class="thumbnail">` +
-          `<h3 class="name">${user.display_name}</h3>` +
-          `<p class="title">${char}</p>` +
-          `<a class="btn" href="https://www.twitch.tv/${user.name}" target="_blank">www.twitch.tv/${user.name}</a>` +
-          `</div>`;
-         html = html.concat((stream)?(`<iframe src="https://player.twitch.tv/?channel=${user.name}&parent=sektor-v-streams.herokuapp.com" autoplay="false" frameborder="0" border="0" cellspacing="0"
-        style="border-style: none;width: 100%; height: 120px; overflow: hidden"/>`):(_stream.data.offline) ? `<div class="offline-lable"><img src=${_stream.data.offline}  width="320" height="180"></div>` :
-           `<div class="offline-lable">Steam is OFFLINE</div>`);
-        // let html =
-        //   `<div class="username">${user.display_name}</div>` +
-        //   `<div class="channel-link"><a href="https://www.twitch.tv/${user.name}">www.twitch.tv/${user.name}</a></div>` +
-        //   `<div class="char-name">${char}</div>`;
-        // html = html.concat((stream) ? `<img src=${stream.preview.medium}>` :
-        //   `<div class="offline-lable">Steam is OFFLINE</div>`);
-        div.innerHTML = html;
-        div.className = "wrapper";
-        root.appendChild(div);
+      displaynameDiv.dataset.name = channel.username;
+      charnameDiv.dataset.title = channel.character;
+      linkAHref.dataset.link = `www.twitch.tv/${channel.username}`;
+      rootElement.appendChild(element);
+    }
+
+    const fillCardWithData = (channel) => {
+      let element = (document.querySelectorAll(`[data-name=${channel.data.username}]`)[0])?document.querySelectorAll(`[data-name=${channel.data.username}]`)[0]:document.querySelectorAll(`[data-name=${channel.user.display_name}]`)[0];
+      element = element.parentElement.parentElement;
+
+      let thumbnailDiv = element.querySelector(".thumbnail");
+      let displaynameDiv = element.querySelector(".name");
+      let charnameDiv = element.querySelector(".title");
+      let linkAHref = element.querySelector(".btn");
+
+      displaynameDiv.dataset.name = channel.user.display_name;
+      charnameDiv.dataset.title = channel.data.character;
+      linkAHref.dataset.link = `www.twitch.tv/${channel.data.username}`;
+
+      thumbnailDiv.style.backgroundImage = `url(${channel.user.logo}`;
+      thumbnailDiv.style.backgroundPosition = "100% 100%";
+      thumbnailDiv.style.backgroundSize = "cover";
+
+      thumbnailDiv.innerHTML = "";
+
+      linkAHref.href = `https://${linkAHref.dataset.link}`;
+      linkAHref.target = "_blank";
+    }
+
+
+    socket.on('preloaded', (data) => {
+      data.channels.forEach((channel) => {
+        createNewCard(channel);
+      });
+      data.currentData.forEach((channel) => {
+        fillCardWithData(channel);
       });
     });
+
+    socket.on('loaded', (data) => {
+      console.log(data.streams);
+      data.streams.forEach((stream) =>{
+        fillCardWithData(stream);
+      })
+    })
+    // socket.on('some event', (data) => {
+    //   console.log(data);
+    //   if (!data) return;
+    //   //root.innerHTML = "";
+    //   let streams = data.streams;
+    //   streams.forEach(_stream => {
+    //     const user = _stream.user;
+    //     const stream = _stream.stream.stream;
+    //     const char = _stream.data.character;
+    //     let div = document.createElement("div");
+
+    //     let html =
+    //       `<div class="profile">` +
+    //        +
+    //       `<h3 class="name">${user.display_name}</h3>` +
+    //       `<p class="title">${char}</p>` +
+    //       `<a class="btn" href="https://www.twitch.tv/${user.name}" target="_blank">www.twitch.tv/${user.name}</a>` +
+    //       `</div>`;
+    //     html = html.concat((stream) ? (
+    //         `<div class="offline-lable">${stream.channel.status}<img src=${stream.preview.medium} height="145"></div>`
+    //       ) : (_stream.data.offline) ?
+    //       `<div class="offline-lable"><img src=${_stream.data.offline} height="145"></div>` :
+    //       `<div class="offline-lable">Steam is OFFLINE <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145"></div>`
+    //     );
+    //     div.innerHTML = html;
+    //     div.className = "wrapper";
+    //     root.appendChild(div);
+    //   });
+    // });
   </script>
 
 

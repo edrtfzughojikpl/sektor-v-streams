@@ -110,15 +110,16 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-  socket.emit('some event', {
-    streams: currentData
+  socket.emit('preloaded', {
+    channels,
+    currentData
   });
 });
 
 setInterval(() => {
   getDataForKnownChannels(() => {
     updateChannelsOffline();
-    io.emit('some event', {
+    io.emit('loaded', {
       streams: currentData
     });
     console.log("Sending New Fetch");
