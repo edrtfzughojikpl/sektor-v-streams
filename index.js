@@ -77,9 +77,7 @@ const getDataForKnownChannels = (callback) => {
         stream,
         data: channels[i]
       });
-      console.log(channels[i].username);
       if(i == channels.length-1){
-        // console.log(currentData);
         setTimeout(() => {
           callback();
         }, 1500)
@@ -98,6 +96,20 @@ const fs = require('fs');
 const getChannelFromFile = () => {
   let rawdata = fs.readFileSync('channels.json');
   channels = JSON.parse(rawdata);
+  channels = channels.sort(compare);
+}
+
+function compare(a, b) {
+  const bandA = a.username.toUpperCase();
+  const bandB = b.username.toUpperCase();
+
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
 }
 
 const updateChannelsOffline = () => {

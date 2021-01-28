@@ -235,7 +235,7 @@
 
 <body>
   <div id="root">
-    <div class="wrapper" data-isPlaceholder="true" style="display: none">
+    <div class="wrapper" data-isPlaceholder="true" data-isOnline="false" style="display: none">
       <div class="profile">
         <div class="thumbnail">
           <div class="lds-spinner">
@@ -286,7 +286,9 @@
     }
 
     const fillCardWithData = (channel) => {
-      let element = (document.querySelectorAll(`[data-name=${channel.data.username}]`)[0])?document.querySelectorAll(`[data-name=${channel.data.username}]`)[0]:document.querySelectorAll(`[data-name=${channel.user.display_name}]`)[0];
+      let element = (document.querySelectorAll(`[data-name=${channel.data.username}]`)[0]) ? document
+        .querySelectorAll(`[data-name=${channel.data.username}]`)[0] : document.querySelectorAll(
+          `[data-name=${channel.user.display_name}]`)[0];
       element = element.parentElement.parentElement;
 
       let thumbnailDiv = element.querySelector(".thumbnail");
@@ -306,8 +308,24 @@
 
       linkAHref.href = `https://${linkAHref.dataset.link}`;
       linkAHref.target = "_blank";
-    }
 
+      let offlineLabel = element.querySelector(".offline-lable");
+      let img = document.createElement("img");
+
+      if (channel.stream.stream) {
+        offlineLabel.textContent = channel.stream.stream.channel.status;
+        img.src = channel.stream.stream.preview.medium;
+        element.dataset.isOnline = true;
+      } else {
+        offlineLabel.textContent = "Steam is OFFLINE";
+        img.src = (channel.data.offline)?channel.data.offline:"https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png";
+        img.height = 145;
+        img.width = 258;
+        element.dataset.isOnline = false;
+      }
+      offlineLabel.appendChild(img);
+      element.dataset.isplaceholder = false;
+    }
 
     socket.on('preloaded', (data) => {
       data.channels.forEach((channel) => {
@@ -316,43 +334,28 @@
       data.currentData.forEach((channel) => {
         fillCardWithData(channel);
       });
+      sortStreams();
     });
 
     socket.on('loaded', (data) => {
-      console.log(data.streams);
-      data.streams.forEach((stream) =>{
+      data.streams.forEach((stream) => {
         fillCardWithData(stream);
-      })
-    })
-    // socket.on('some event', (data) => {
-    //   console.log(data);
-    //   if (!data) return;
-    //   //root.innerHTML = "";
-    //   let streams = data.streams;
-    //   streams.forEach(_stream => {
-    //     const user = _stream.user;
-    //     const stream = _stream.stream.stream;
-    //     const char = _stream.data.character;
-    //     let div = document.createElement("div");
+      });
+      sortStreams();
+    });
 
-    //     let html =
-    //       `<div class="profile">` +
-    //        +
-    //       `<h3 class="name">${user.display_name}</h3>` +
-    //       `<p class="title">${char}</p>` +
-    //       `<a class="btn" href="https://www.twitch.tv/${user.name}" target="_blank">www.twitch.tv/${user.name}</a>` +
-    //       `</div>`;
-    //     html = html.concat((stream) ? (
-    //         `<div class="offline-lable">${stream.channel.status}<img src=${stream.preview.medium} height="145"></div>`
-    //       ) : (_stream.data.offline) ?
-    //       `<div class="offline-lable"><img src=${_stream.data.offline} height="145"></div>` :
-    //       `<div class="offline-lable">Steam is OFFLINE <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145"></div>`
-    //     );
-    //     div.innerHTML = html;
-    //     div.className = "wrapper";
-    //     root.appendChild(div);
-    //   });
-    // });
+    const sortStreams = () => {
+      let onlineStreams = document.querySelectorAll(`[data-is-online="true"]`);
+      let offlineStreams = document.querySelectorAll(`[data-is-online="false"]`);
+      console.log(onlineStreams);
+      rootElement.innerHTML = "";
+      onlineStreams.forEach((stream) => {
+        rootElement.appendChild(stream);
+      });
+      offlineStreams.forEach((stream) => {
+        rootElement.appendChild(stream);
+      })
+    }
   </script>
 
 
