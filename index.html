@@ -3,6 +3,7 @@
 
 <head>
   <title>Sektor-V Streams</title>
+  <!-- crimson -->
   <style>
     * {
       margin: 0;
@@ -10,21 +11,93 @@
       box-sizing: border-box;
     }
 
+    body {
+      width: 100%;
+      height: 100vh;
+      background: #202020;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+    }
+
     #root {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    .stream {
-      text-align: center;
-      min-width: 320px;
-      margin: 0 5px;
-    }
-
-    .offline-lable {
       position: relative;
-      top: 90px;
-      transform: translateY(-50%);
+    }
+
+    .wrapper {
+      width: 275px;
+      height: 275px;
+      background: #151515;
+      border-radius: 10px;
+      padding: 20px 20px 20px 20px;
+      margin: 5px 1% 5px 1%;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+    }
+
+    .wrapper .profile:after {
+      width: 100%;
+      height: 1px;
+      content: ' ';
+      display: block;
+      margin-top: 1.3em;
+      background: #e9eff6;
+    }
+
+    .wrapper .profile .thumbnail {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1.5em;
+      border-radius: 100%;
+      box-shadow: 0 13px 26px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
+    }
+
+    .wrapper .profile .name {
+      color: #772ce8;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .wrapper .profile .title {
+      color: #7c8097;
+      font-size: 0.75em;
+      font-weight: 300;
+      text-align: center;
+      padding-top: 0.5em;
+      padding-bottom: 0.7em;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .wrapper .profile .btn {
+      color: #fff;
+      height: 42px;
+      outline: none;
+      border: none;
+      display: block;
+      cursor: pointer;
+      font-weight: 600;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 70px;
+      box-shadow: 0 13px 26px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .16);
+      background: linear-gradient(to bottom right, #451093, #772ce8);
+      text-decoration: none;
+      text-align: center;
+      line-height: 42px;
+    }
+    .wrapper .offline-lable{
+      color: #7c8097;
+      font-size: 0.75em;
+      font-weight: 300;
+      text-align: center;
+      padding-top: 0.5em;
+      padding-bottom: 0.7em;
+      letter-spacing: 1.5px;
     }
   </style>
 </head>
@@ -47,18 +120,33 @@
         const stream = _stream.stream.stream;
         const char = _stream.data.character;
         let div = document.createElement("div");
+
         let html =
-          `<div class="username">${user.display_name}</div>` +
-          `<div class="channel-link"><a href="https://www.twitch.tv/${user.name}">www.twitch.tv/${user.name}</a></div>` +
-          `<div class="char-name">${char}</div>`;
-        html = html.concat((stream) ? `<img src=${stream.preview.medium}>` :
-          `<div class="offline-lable">Steam is OFFLINE</div>`);
+          `<div class="profile">` +
+          `<img
+          src="${user.logo}"
+          class="thumbnail">` +
+          `<h3 class="name">${user.display_name}</h3>` +
+          `<p class="title">${char}</p>` +
+          `<a class="btn" href="https://www.twitch.tv/${user.name}" target="_blank">www.twitch.tv/${user.name}</a>` +
+          `</div>`;
+         html = html.concat((stream)?(`<iframe src="https://player.twitch.tv/?channel=${user.name}&parent=sektor-v-streams.herokuapp.com" />`):(_stream.data.offline) ? `<div class="offline-lable"><img src=${_stream.data.offline} width="200" heigth="200"></div>` :
+           `<div class="offline-lable">Steam is OFFLINE</div>`);
+        // let html =
+        //   `<div class="username">${user.display_name}</div>` +
+        //   `<div class="channel-link"><a href="https://www.twitch.tv/${user.name}">www.twitch.tv/${user.name}</a></div>` +
+        //   `<div class="char-name">${char}</div>`;
+        // html = html.concat((stream) ? `<img src=${stream.preview.medium}>` :
+        //   `<div class="offline-lable">Steam is OFFLINE</div>`);
         div.innerHTML = html;
-        div.className = "stream";
+        div.className = "wrapper";
         root.appendChild(div);
       });
     });
   </script>
+
+
+
 </body>
 
 </html>

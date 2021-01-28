@@ -63,18 +63,21 @@ const findChannelActivity = (username) => new Promise((resolve, reject) => {
 let channels = [];
 let currentData = [];
 
-const getDataForKnownChannels = () => {
+const getDataForKnownChannels = (callback) => {
+  currentData = [];
   for (let i = 0; i < channels.length; i++) {
     findChannelActivity(channels[i].username).then(({
       user,
       body
     }) => {
       let stream = JSON.parse(body);
+      channels[i].offline = (stream.stream)?stream.stream.channel.profile_banner:(!channels[i].offline)?null:channels[i].offline;
       currentData.push({
         user,
         stream,
         data: channels[i]
       });
+      if(i == channels.length-1) callback();
     })
   }
 }
@@ -91,8 +94,7 @@ const getChannelFromFile = () => {
   channels = JSON.parse(rawdata);
 }
 
-const writeNewChannel = (username) => {
-  channels.push(username);
+const updateChannelsOffline = () => {
   let data = JSON.stringify(channels);
   fs.writeFileSync('channels.json', data);
 }
@@ -108,13 +110,20 @@ io.on('connection', (socket) => {
 });
 
 setInterval(() => {
-  io.emit('some event', {
-    streams: currentData
+  getDataForKnownChannels(() => {
+    updateChannelsOffline();
+    console.log(currentData.length);
+    io.emit('some event', {
+      streams: currentData
+    });
+    console.log("Sending New Fetch");
   });
-}, 5 * 60 * 1000);
+}, 1 * 60 * 1000);
 
 http.listen(PORT, () => {
   getChannelFromFile();
-  getDataForKnownChannels();
-  console.log(`Listening on ${ PORT }`);
+  getDataForKnownChannels(()=>{
+    updateChannelsOffline();
+    console.log(`Listening on ${ PORT }`);
+  });
 });
