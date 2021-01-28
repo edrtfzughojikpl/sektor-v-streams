@@ -136,7 +136,7 @@ setInterval(() => {
     });
     console.log("Sending New Fetch");
   });
-}, 1 * 60 * 1000);
+}, 5 * 60 * 1000);
 
 http.listen(PORT, () => {
   getChannelFromFile();
