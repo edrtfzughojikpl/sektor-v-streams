@@ -347,7 +347,6 @@
     const sortStreams = () => {
       let onlineStreams = document.querySelectorAll(`[data-is-online="true"]`);
       let offlineStreams = document.querySelectorAll(`[data-is-online="false"]`);
-      console.log(onlineStreams);
       rootElement.innerHTML = "";
       onlineStreams.forEach((stream) => {
         rootElement.appendChild(stream);
