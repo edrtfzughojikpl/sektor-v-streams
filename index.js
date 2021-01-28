@@ -82,6 +82,7 @@ const getDataForKnownChannels = () => {
 const app = require('express')();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
+const PORT = process.env.PORT || 5000;
 
 const fs = require('fs');
 
@@ -112,8 +113,8 @@ setInterval(() => {
   });
 }, 5 * 60 * 1000);
 
-http.listen(3000, () => {
+http.listen(PORT, () => {
   getChannelFromFile();
   getDataForKnownChannels();
-  console.log('listening on *:3000');
+  console.log(`Listening on ${ PORT }`);
 });
