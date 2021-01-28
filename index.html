@@ -130,7 +130,8 @@
           `<p class="title">${char}</p>` +
           `<a class="btn" href="https://www.twitch.tv/${user.name}" target="_blank">www.twitch.tv/${user.name}</a>` +
           `</div>`;
-         html = html.concat((stream)?(`<iframe src="https://player.twitch.tv/?channel=${user.name}&parent=sektor-v-streams.herokuapp.com" />`):(_stream.data.offline) ? `<div class="offline-lable"><img src=${_stream.data.offline} width="200" heigth="200"></div>` :
+         html = html.concat((stream)?(`<iframe src="https://player.twitch.tv/?channel=${user.name}&parent=sektor-v-streams.herokuapp.com" autoplay="false" frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 120px; overflow: hidden"/>`):(_stream.data.offline) ? `<div class="offline-lable"><img src=${_stream.data.offline}  width="320" height="180"></div>` :
            `<div class="offline-lable">Steam is OFFLINE</div>`);
         // let html =
         //   `<div class="username">${user.display_name}</div>` +

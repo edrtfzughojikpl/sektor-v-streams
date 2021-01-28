@@ -77,7 +77,13 @@ const getDataForKnownChannels = (callback) => {
         stream,
         data: channels[i]
       });
-      if(i == channels.length-1) callback();
+      console.log(channels[i].username);
+      if(i == channels.length-1){
+        // console.log(currentData);
+        setTimeout(() => {
+          callback();
+        }, 1500)
+      }
     })
   }
 }
@@ -112,7 +118,6 @@ io.on('connection', (socket) => {
 setInterval(() => {
   getDataForKnownChannels(() => {
     updateChannelsOffline();
-    console.log(currentData.length);
     io.emit('some event', {
       streams: currentData
     });
