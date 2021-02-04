@@ -61,6 +61,8 @@ const createNewCard = ({
   displaynameDiv.dataset.name = user.display_name;
   // charnameDiv.dataset.title = user.display_name;
   linkAHref.dataset.link = `www.twitch.tv/${user.display_name}`;
+  linkAHref.href = `https://${linkAHref.dataset.link}`;
+  linkAHref.target = "_blank";
   streamTitleP.textContent = stream.channel.status;
   rootElement.appendChild(element);
 }
