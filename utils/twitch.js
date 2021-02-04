@@ -77,8 +77,10 @@ const sendInfoToUsers = (info) => {
         user: info.user,
         stream: stream.stream
       });
-    } else
+    } else {
       UpdatedChannels[pos].stream = stream.stream;
+      console.log(info.user.display_name);
+    }
     resolve();
   })
 }
