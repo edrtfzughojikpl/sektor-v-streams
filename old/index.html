@@ -28,7 +28,7 @@
     .wrapper {
       position: relative;
       width: 275px;
-      height: 425px;
+      height: 450px;
       background: #151515;
       border-radius: 10px;
       padding: 20px 20px 20px 20px;
@@ -257,8 +257,9 @@
         <p class="title" data-title=""></p>
         <a class="btn" href="#" data-link=""></a>
       </div>
-      <div class="offline-lable">Steam is OFFLINE
-        <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145">
+      <div class="offline-lable">
+        <p class="stream-title">Steam is OFFLINE</p>
+        <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145" class="preview">
       </div>
     </div>
   </div>
@@ -295,6 +296,8 @@
       let displaynameDiv = element.querySelector(".name");
       let charnameDiv = element.querySelector(".title");
       let linkAHref = element.querySelector(".btn");
+      let streamtitleP = element.querySelector(".stream-title");
+      let previewImg = element.querySelector(".preview");
 
       displaynameDiv.dataset.name = channel.user.display_name;
       charnameDiv.dataset.title = channel.data.character;
@@ -310,20 +313,17 @@
       linkAHref.target = "_blank";
 
       let offlineLabel = element.querySelector(".offline-lable");
-      let img = document.createElement("img");
 
       if (channel.stream.stream) {
-        offlineLabel.textContent = channel.stream.stream.channel.status;
-        img.src = channel.stream.stream.preview.medium;
+        streamtitleP.textContent = channel.stream.stream.channel.status;
+        previewImg.src = channel.stream.stream.preview.medium;
         element.dataset.isOnline = true;
       } else {
-        offlineLabel.textContent = "Steam is OFFLINE";
-        img.src = (channel.data.offline)?channel.data.offline:"https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png";
-        img.height = 145;
-        img.width = 258;
+        streamtitleP.textContent = "Steam is OFFLINE";
+        previewImg.src = (channel.data.offline)?channel.data.offline:"https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png";
+        previewImg.width = 258;
         element.dataset.isOnline = false;
       }
-      offlineLabel.appendChild(img);
       element.dataset.isplaceholder = false;
     }
 
