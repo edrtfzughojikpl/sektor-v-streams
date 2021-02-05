@@ -38,7 +38,12 @@ socket.on('data', ({
         }
       }
     } else
-    if (!channel.stream) card.remove();
+    if (!channel.stream) {
+      card.remove();
+    } else {
+      if (channel.stream.game != 'Grand Theft Auto V')
+        card.remove();
+    }
   })
 });
 
