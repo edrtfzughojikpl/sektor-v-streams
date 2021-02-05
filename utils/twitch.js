@@ -28,6 +28,7 @@ const channelIDfromUser = (user) => {
 };
 
 const channelStatusByUser = (user) => {
+  console.log(user.display_name);
   var options = {
     url: `https://api.twitch.tv/kraken/streams/${user._id}`,
     headers: {
