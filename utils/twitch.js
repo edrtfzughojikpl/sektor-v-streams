@@ -4,7 +4,8 @@ const getChannelFromFile = () => {
   const fs = require('fs');
   let rawdata = fs.readFileSync('./utils/users.json');
   users = JSON.parse(rawdata);
-  users.sort();
+  let rawdata2 = fs.readFileSync('./utils/channels.json');
+  channels = JSON.parse(rawdata2);
 }
 
 
@@ -28,7 +29,6 @@ const channelIDfromUser = (user) => {
 };
 
 const channelStatusByUser = (user) => {
-  console.log(user.display_name);
   var options = {
     url: `https://api.twitch.tv/kraken/streams/${user._id}`,
     headers: {
@@ -51,8 +51,8 @@ const channelStatusByUser = (user) => {
 }
 
 const getInfoForUser = (index) => {
-  if (!users[index]) index = 0;
-  channelIDfromUser(users[index].channel)
+  if (!channels[index]) index = 0;
+  channelIDfromUser(channels[index])
     .then(res => {
       res = JSON.parse(res);
       if (res.users[0]) {
@@ -86,7 +86,7 @@ const sendInfoToUsers = (info) => {
     resolve();
   })
 }
-
+let channels = [];
 let users = [];
 let io;
 
