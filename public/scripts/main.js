@@ -49,13 +49,15 @@ socket.on('data', ({
 
 const createNewCard = ({
   user,
-  stream
+  stream,
+  charInfo
 }) => {
   let element = Placeholder.cloneNode(true);
   element.style.display = "block";
   let thumbnailDiv = element.querySelector(".thumbnail");
   let displaynameDiv = element.querySelector(".name");
-  // let charnameDiv = element.querySelector(".title");
+  let charnameDiv = element.querySelector(".title");
+  let orgaDiv = element.querySelector(".orga");
   let linkAHref = element.querySelector(".btn");
   let streamTitleP = element.querySelector(".stream-title");
 
@@ -64,7 +66,8 @@ const createNewCard = ({
   thumbnailDiv.style.backgroundSize = "cover";
 
   displaynameDiv.dataset.name = user.display_name;
-  // charnameDiv.dataset.title = user.display_name;
+  charnameDiv.dataset.title = charInfo.character;
+  orgaDiv.dataset.title = charInfo.organisation;
   linkAHref.dataset.link = `www.twitch.tv/${user.display_name}`;
   linkAHref.href = `https://${linkAHref.dataset.link}`;
   linkAHref.target = "_blank";

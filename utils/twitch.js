@@ -2,9 +2,9 @@ const request = require('request');
 
 const getChannelFromFile = () => {
   const fs = require('fs');
-  let rawdata = fs.readFileSync('./utils/channels.json');
-  channels = JSON.parse(rawdata);
-  channels.sort();
+  let rawdata = fs.readFileSync('./utils/users.json');
+  users = JSON.parse(rawdata);
+  users.sort();
 }
 
 
@@ -50,8 +50,8 @@ const channelStatusByUser = (user) => {
 }
 
 const getInfoForUser = (index) => {
-  if (!channels[index]) index = 0;
-  channelIDfromUser(channels[index])
+  if (!users[index]) index = 0;
+  channelIDfromUser(users[index].channel)
     .then(res => {
       res = JSON.parse(res);
       if (res.users[0]) {
@@ -62,7 +62,7 @@ const getInfoForUser = (index) => {
             getInfoForUser(++index);
           })
       }
-    }).catch(err => console.log(err));
+    }).catch(err => console.log("Error: "+err));
 }
 
 let UpdatedChannels = [];
@@ -73,9 +73,11 @@ const sendInfoToUsers = (info) => {
   return new Promise((resolve, reject) => {
     let pos = UpdatedChannels.findIndex(channel => channel.user.display_name == info.user.display_name);
     if (pos == -1) {
+      pos = users.findIndex(user => user.channel.toLowerCase() == info.user.display_name.toLowerCase());
       UpdatedChannels.push({
         user: info.user,
-        stream: stream.stream
+        stream: stream.stream,
+        charInfo: users[pos]
       });
     } else {
       UpdatedChannels[pos].stream = stream.stream;
@@ -84,7 +86,7 @@ const sendInfoToUsers = (info) => {
   })
 }
 
-let channels = [];
+let users = [];
 let io;
 
 getChannelFromFile();

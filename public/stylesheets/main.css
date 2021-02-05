@@ -19,18 +19,39 @@ body {
 }
 
 #header {
-  padding: 3px;
+  padding-top: 3px;
   text-align: center;
   background: #026c45;
   color: white;
-  font-size: 16px;
-  margin-bottom: 7px;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #292c2f;
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: normal 16px sans-serif;
+  padding: 5px;
 }
 
 .wrapper {
   position: relative;
+  top: 55px;
   width: 275px;
-  height: 300px;
+  height: 350px;
   background: #151515;
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
@@ -85,6 +106,23 @@ p {
   text-align: center;
   padding-top: 0.5em;
   padding-bottom: 0.7em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  content: attr(data-title);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 25px;
+}
+
+.wrapper .profile .orga::before {
+  color: #7c8097;
+  font-size: 0.65em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   content: attr(data-title);

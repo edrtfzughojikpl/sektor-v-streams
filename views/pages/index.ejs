@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script src="/socket.io/socket.io.js"></script>
   <%- include('../partials/header.ejs') %>
@@ -7,7 +8,7 @@
 
 <body>
   <div id="header">
-    <h2>New update in</h2>
+    <h3>New update in</h3>
     <p id="time">00:00</p>
   </div>
   <div id="root">
@@ -16,7 +17,8 @@
         <div class="thumbnail">
         </div>
         <h3 class="name" data-name="Name"></h3>
-        <!-- <p class="title" data-title="Name"></p> -->
+        <p class="title" data-title="Name"></p>
+        <p class="orga" data-orga="Name"></p>
         <a class="btn" href="#" data-link="link"></a>
       </div>
       <div class="offline-lable">
@@ -25,6 +27,12 @@
       </div>
     </div>
   </div>
+  <div id="footer">
+    <div><a style="color: #5f5f5f"
+        href="https://docs.google.com/spreadsheets/d/1LpI-nO4oqCH_ksi8n5HT9s0LlB7HNjfhOY2JrH3pBVM/edit#gid=413858334"
+        target="_blank" rel="noopener noreferrer">Streaming-Liste</a><span style="font-size:14px"> von yoshua1994</span></div>
+  </div>
 
 </body>
+
 </html>
