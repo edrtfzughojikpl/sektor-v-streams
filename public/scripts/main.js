@@ -39,10 +39,13 @@ socket.on('data', ({
       }
     } else
     if (!channel.stream) {
+      console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
       card.parentElement.parentElement.remove();
     } else {
-      if (channel.stream.game != 'Grand Theft Auto V')
+      if (channel.stream.game != 'Grand Theft Auto V') {
+        console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
         card.parentElement.parentElement.remove();
+      }
     }
   })
 });
