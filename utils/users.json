@@ -139,6 +139,11 @@
     "organisation": "Mediziner"
   },
   {
+    "channel": "missdeepblack",
+    "character": "Mirina Caruso",
+    "organisation": "Mediziner"
+  },
+  {
     "channel": "worek",
     "character": "Dr. Montgomery Sunderland",
     "organisation": "Justiz"
@@ -242,11 +247,6 @@
     "channel": "Grueeeen",
     "character": "Leslie Cheng",
     "organisation": "Sons of Light"
-  },
-  {
-    "channel": "missdeepblack",
-    "character": "Mirina Caruso",
-    "organisation": "Zivilist"
   },
   {
     "channel": "kalle_bierbaum",
