@@ -50,20 +50,19 @@ const channelStatusByUser = (user) => {
   })
 }
 
-const getInfoForUser = (index) => {
+const getInfoForUser = async (index) => {
   if (!channels[index]) index = 0;
-  channelIDfromUser(channels[index])
-    .then(res => {
-      res = JSON.parse(res);
-      if (res.users[0]) {
-        user = res.users[0];
-        channelStatusByUser(user)
-          .then(result => {
-            sendInfoToUsers(result);
-            getInfoForUser(++index);
-          })
-      }
-    }).catch(err => console.log("Error: "+err));
+  try {
+    let res = await channelIDfromUser(channels[index]);
+    res = JSON.parse(res);
+    if (res.users[0]) {
+      let result = await channelStatusByUser(res.users[0]);
+      sendInfoToUsers(result);
+      getInfoForUser(++index);
+    }
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 let UpdatedChannels = [];
