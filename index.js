@@ -38,3 +38,8 @@ if (cluster.isMaster) {
     process.exit(1);
   })
 }
+// {
+//   "channel": "derHobbs",
+//   "character": "Vincent Hobbs",
+//   "organisation": "Schwarzwasser"
+// },
