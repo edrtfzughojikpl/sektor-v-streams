@@ -51,10 +51,7 @@ const channelStatusByUser = (user) => {
 }
 
 const getInfoForUser = async (index) => {
-  if (!channels[index]){
-    index = 0;
-    console.log(`new round: ${new Date().toLocaleString()}`);
-  }
+  if (!channels[index]) index = 0;
   try {
     let res = await channelIDfromUser(channels[index]);
     res = JSON.parse(res);
