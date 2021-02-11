@@ -29,11 +29,6 @@
     "organisation": "Schwarzwasser"
   },
   {
-    "channel": "derHobbs",
-    "character": "Vincent Hobbs",
-    "organisation": "Schwarzwasser"
-  },
-  {
     "channel": "kingsm1le",
     "character": "Jamal Cooper",
     "organisation": "Schwarzwasser"
@@ -407,5 +402,10 @@
     "channel": "MasterZwerg1",
     "character": "Jack Stahl",
     "organisation": "Zivilist"
+  },
+  {
+    "channel": "derHobbs[ERROR]",
+    "character": "Vincent Hobbs",
+    "organisation": "Schwarzwasser"
   }
 ]
