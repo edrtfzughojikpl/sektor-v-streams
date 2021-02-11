@@ -24,7 +24,7 @@ socket.on('data', ({
   channels,
   lastUpdated
 }) => {
-  // console.log(channels, lastUpdated);
+  console.log(channels, lastUpdated);
 
   let passedSeconds = calculate(lastUpdated);
   Seconds = passedSeconds;
