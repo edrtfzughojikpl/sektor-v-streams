@@ -49,11 +49,6 @@
     "organisation": "Schwarzwasser"
   },
   {
-    "channel": "MasterZwerg1",
-    "character": "Jack Stahl",
-    "organisation": "Schwarzwasser"
-  },
-  {
     "channel": "Cyb3rl",
     "character": "Sean ?",
     "organisation": "Polizei"
@@ -406,6 +401,11 @@
   {
     "channel": "1nicesmaedchen",
     "character": "Yuki Nakamura",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "MasterZwerg1",
+    "character": "Jack Stahl",
     "organisation": "Zivilist"
   }
 ]
