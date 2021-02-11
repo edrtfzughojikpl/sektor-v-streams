@@ -25,6 +25,10 @@ if (cluster.isMaster) {
 
   http.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
+  setTimeout(() => {
+    process.exit(1);
+  }, 1 * 60 * 60 * 60 * 1000);
+  
   process.on('uncaughtException', (err) => {
     console.log(`Uncaught Exception: ${err.message}`);
     process.exit(1);
