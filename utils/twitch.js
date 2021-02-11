@@ -59,9 +59,10 @@ const getInfoForUser = async (index) => {
       let result = await channelStatusByUser(res.users[0]);
       sendInfoToUsers(result);
     }
-    getInfoForUser(++index);
   } catch (error) {
     console.log(error)
+  } finally {
+    getInfoForUser(++index);
   }
 }
 
