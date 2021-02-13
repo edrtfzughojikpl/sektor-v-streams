@@ -24,6 +24,11 @@
     "organisation": "Schwarzwasser"
   },
   {
+    "channel": "derHobbs",
+    "character": "Vincent Hobbs",
+    "organisation": "Schwarzwasser"
+  },
+  {
     "channel": "Tony__C",
     "character": "Kalle Schimanski",
     "organisation": "Schwarzwasser"
@@ -402,10 +407,5 @@
     "channel": "MasterZwerg1",
     "character": "Jack Stahl",
     "organisation": "Zivilist"
-  },
-  {
-    "channel": "derHobbs[ERROR]",
-    "character": "Vincent Hobbs",
-    "organisation": "Schwarzwasser"
   }
 ]
