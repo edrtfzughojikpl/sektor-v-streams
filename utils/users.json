@@ -119,6 +119,16 @@
     "organisation": "Polizei"
   },
   {
+    "channel": "sophiasweetheart",
+    "character": "Sophia Smith",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Hugsl4y",
+    "character": "Kofi O'Hara",
+    "organisation": "Polizei"
+  },
+  {
     "channel": "Visenaa",
     "character": "Aurora Quinn",
     "organisation": "Mediziner"
@@ -131,6 +141,11 @@
   {
     "channel": "HaGee",
     "character": "Tatanga Wokadeh",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "TheBlueEyeGaming",
+    "character": "John Delgardo",
     "organisation": "Mediziner"
   },
   {
@@ -151,6 +166,11 @@
   {
     "channel": "Kryptophx",
     "character": "Danny Vera",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "Hennerlive",
+    "character": "Harry Schmidt",
     "organisation": "SecuroServ"
   },
   {
@@ -179,6 +199,16 @@
     "organisation": "CNT News"
   },
   {
+    "channel": "117Entertainment",
+    "character": "Yoshiaki Sugawara",
+    "organisation": "CNT News"
+  },
+  {
+    "channel": "SeFrOn__",
+    "character": "Jedediah O'Delecto",
+    "organisation": "DNTVN"
+  },
+  {
     "channel": "TaratosHD",
     "character": "Mark Muth",
     "organisation": "Taxi"
@@ -205,12 +235,22 @@
   },
   {
     "channel": "BeardBro_Teddy",
-    "character": "'Teddy'",
+    "character": "Ted 'Teddy' Hrfnass",
     "organisation": "Yakuza"
   },
   {
     "channel": "P4NCAKS",
     "character": "J. Coody",
+    "organisation": "Yakuza"
+  },
+  {
+    "channel": "fenrir_rp",
+    "character": "Han Nakamura",
+    "organisation": "Yakuza"
+  },
+  {
+    "channel": "Ohozelot ",
+    "character": "Yami Thevy Hosho",
     "organisation": "Yakuza"
   },
   {
@@ -304,11 +344,6 @@
     "organisation": "Zivilist"
   },
   {
-    "channel": "Ohozelot",
-    "character": "Yami Thevy Hosho",
-    "organisation": "Zivilist"
-  },
-  {
     "channel": "ShoXx__",
     "character": "Cole Jones",
     "organisation": "Zivilist"
@@ -329,11 +364,6 @@
     "organisation": "Zivilist"
   },
   {
-    "channel": "SeFrOn__",
-    "character": "Jedediah O'Delecto",
-    "organisation": "Zivilist"
-  },
-  {
     "channel": "DarealAL",
     "character": "Frank Nathaniel Stein",
     "organisation": "Zivilist"
@@ -346,11 +376,6 @@
   {
     "channel": "Raz3r_Gaming",
     "character": "Juan Pablo Guzmàn",
-    "organisation": "Zivilist"
-  },
-  {
-    "channel": "fenrir_rp",
-    "character": "Han Nakamura",
     "organisation": "Zivilist"
   },
   {
@@ -381,11 +406,6 @@
   {
     "channel": "BenzsonTV",
     "character": "?",
-    "organisation": "Zivilist"
-  },
-  {
-    "channel": "117Entertainment",
-    "character": "Yoshiaki Sugawara",
     "organisation": "Zivilist"
   },
   {

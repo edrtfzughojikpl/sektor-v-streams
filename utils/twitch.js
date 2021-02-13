@@ -4,8 +4,8 @@ const getChannelFromFile = () => {
   const fs = require('fs');
   let rawdata = fs.readFileSync('./utils/users.json');
   users = JSON.parse(rawdata);
-  let rawdata2 = fs.readFileSync('./utils/channels.json');
-  channels = JSON.parse(rawdata2);
+  //let rawdata2 = fs.readFileSync('./utils/channels.json');
+  //channels = JSON.parse(rawdata2);
 }
 
 
@@ -51,14 +51,14 @@ const channelStatusByUser = (user) => {
 }
 
 const getInfoForUser = async (index) => {
-  if (!channels[index]) index = 0;
+  if (!users[index]) index = 0;
   try {
-    let res = await channelIDfromUser(channels[index]);
+    let res = await channelIDfromUser(users[index].channel);
     res = JSON.parse(res);
     if (res.users[0]) {
       let result = await channelStatusByUser(res.users[0]);
       sendInfoToUsers(result);
-    }
+    } else console.log(users[index].channel);
   } catch (error) {
     console.log(error)
   } finally {
