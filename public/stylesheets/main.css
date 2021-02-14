@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 150px;
 }
 
 #header {
@@ -51,7 +52,7 @@ body {
   position: relative;
   top: 55px;
   width: 275px;
-  height: 350px;
+  height: 315px;
   background: #151515;
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
@@ -85,6 +86,10 @@ h3 {
 
 p {
   height: 25px;
+}
+
+.wrapper .profile .name{
+  margin-bottom: 10px;
 }
 
 .wrapper .profile .name::before {
@@ -172,4 +177,50 @@ p {
 
 img {
   height: 145px;
+}
+
+th{
+  font-weight: 750;
+  font-size: 1.1em;
+}
+
+.icon {
+	position: relative;
+	cursor: pointer;
+}
+
+.icon:hover .tooltip {
+	display: block;
+}
+
+.tooltip {
+	padding: 5px;
+	position: absolute;
+	width: auto;
+	white-space: nowrap;
+	word-wrap: no-wrap;
+	border-radius: 5px;
+	background-color: #772ce8;
+  color: #fff;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	transform-style: preserve-3d;
+	z-index: 200;
+	font-size: 0.9em;
+	display: none;
+}
+
+.tooltip:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	transform-origin: 50% 50%;
+	transform: rotate(45deg) translateX(-50%);
+	background-color: #772ce8;
+	left: 50%;
+	top: -1px;
+	z-index: 400;
 }

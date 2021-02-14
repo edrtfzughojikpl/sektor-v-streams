@@ -86,7 +86,11 @@
   {
     "channel": "Dekarldent",
     "character": "Vladimir Vladimirovich Powlow",
-    "organisation": "Polizei"
+    "organisation": "Polizei",
+    "otherChars": [{
+      "char": "Michael Ferdinant",
+      "orga": "Einreiseamt"
+    }]
   },
   {
     "channel": "valkjre",
@@ -141,7 +145,11 @@
   {
     "channel": "HaGee",
     "character": "Tatanga Wokadeh",
-    "organisation": "Mediziner"
+    "organisation": "Mediziner",
+    "otherChars": [{
+      "char": "Willy",
+      "orga": "Einreiseamt"
+    }]
   },
   {
     "channel": "TheBlueEyeGaming",
@@ -156,12 +164,20 @@
   {
     "channel": "worek",
     "character": "Dr. Montgomery Sunderland",
-    "organisation": "Justiz"
+    "organisation": "Justiz",
+    "otherChars": [{
+      "char": "Bo",
+      "orga": "Zivilist"
+    }]
   },
   {
     "channel": "HerrHarley",
     "character": "Karl-Heinz Unger",
-    "organisation": "Anwalt"
+    "organisation": "Anwalt",
+    "otherChars": [{
+      "char": "Kevin Ronny Paschulke",
+      "orga": "Zivilist"
+    }]
   },
   {
     "channel": "Kryptophox",
@@ -331,7 +347,36 @@
   {
     "channel": "Jay_Corner",
     "character": "Sanchez Rodriguez Gonzales",
-    "organisation": "Zivilist"
+    "organisation": "Zivilist",
+    "otherChars": [{
+        "char": "Cristos Passalakis",
+        "orga": "Einreiseamt"
+      },
+      {
+        "char": "Boban Romano",
+        "orga": "Polizei"
+      },
+      {
+        "char": "Oscar Bolento",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Timothy Maria Valdez",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Marek Kowalczyk",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Lawrence O'Dare",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Valerie Marquez",
+        "orga": "Zivilist"
+      }
+    ]
   },
   {
     "channel": "OliwoodTV",
@@ -341,11 +386,6 @@
   {
     "channel": "FurkiTV",
     "character": "Steffano Alfonso",
-    "organisation": "Zivilist"
-  },
-  {
-    "channel": "ShoXx__",
-    "character": "Cole Jones",
     "organisation": "Zivilist"
   },
   {
@@ -381,7 +421,11 @@
   {
     "channel": "ErnstPeter",
     "character": "Ethan Dumond",
-    "organisation": "Zivilist"
+    "organisation": "Zivilist",
+    "otherChars": [{
+      "char": "Peter Robert",
+      "orga": "Einreiseamt"
+    }]
   },
   {
     "channel": "dudeSELECT",
@@ -391,7 +435,11 @@
   {
     "channel": "Bounty92",
     "character": "Eddi Kingston",
-    "organisation": "Zivilist"
+    "organisation": "Zivilist",
+    "otherChars": [{
+      "char": "Hartmut Jenssen",
+      "orga": "Zivilist"
+    }]
   },
   {
     "channel": "LadyMiiLoo",
@@ -405,7 +453,7 @@
   },
   {
     "channel": "BenzsonTV",
-    "character": "?",
+    "character": "Murat ?",
     "organisation": "Zivilist"
   },
   {
@@ -426,6 +474,26 @@
   {
     "channel": "MasterZwerg1",
     "character": "Jack Stahl",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "sney7",
+    "character": "Jay Klain ",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Feraganor",
+    "character": "Roderik Schulz",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "kiki_chikila",
+    "character": "Genevieve Grey",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "SergejAbramczyk",
+    "character": "Sergej Abramczyk",
     "organisation": "Zivilist"
   }
 ]

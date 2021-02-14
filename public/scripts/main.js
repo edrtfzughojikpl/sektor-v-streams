@@ -59,22 +59,48 @@ const createNewCard = ({
   element.style.display = "block";
   let thumbnailDiv = element.querySelector(".thumbnail");
   let displaynameDiv = element.querySelector(".name");
-  let charnameDiv = element.querySelector(".title");
-  let orgaDiv = element.querySelector(".orga");
+  // let charnameDiv = element.querySelector(".title");
+  // let orgaDiv = element.querySelector(".orga");
   let linkAHref = element.querySelector(".btn");
-  let streamTitleP = element.querySelector(".stream-title");
+  // let streamTitleP = element.querySelector(".stream-title");
+  let charRow = element.querySelector(".char");
+  let otherCharsRow = element.querySelector(".moreChars");
 
   thumbnailDiv.style.backgroundImage = `url(${user.logo}`;
   thumbnailDiv.style.backgroundPosition = "100% 100%";
   thumbnailDiv.style.backgroundSize = "cover";
 
   displaynameDiv.dataset.name = user.display_name;
-  charnameDiv.dataset.title = charInfo.character;
-  orgaDiv.dataset.title = charInfo.organisation;
+  // charnameDiv.dataset.title = charInfo.character;
+  // orgaDiv.dataset.title = charInfo.organisation;
   linkAHref.dataset.link = `www.twitch.tv/${user.display_name}`;
   linkAHref.href = `https://${linkAHref.dataset.link}`;
   linkAHref.target = "_blank";
-  streamTitleP.textContent = stream.channel.status;
+  // streamTitleP.textContent = stream.channel.status;
+
+  let char = document.createElement("td");
+  let orga = document.createElement("td");
+  char.textContent = charInfo.character;
+  charRow.append(char);
+  orga.textContent = charInfo.organisation;
+  charRow.append(orga);
+
+  if(charInfo.otherChars){
+    let icon = element.querySelector(".icon");
+    icon.style.display = "block";
+    charInfo.otherChars.forEach((item) => {
+      let tr = document.createElement("tr");
+      let charTo = document.createElement("td");
+      let orgaTo = document.createElement("td");
+      charTo.textContent = item.char;
+      orgaTo.textContent = item.orga;
+      tr.append(charTo);
+      tr.append(orgaTo);
+      otherCharsRow.append(tr);
+    })
+
+  }
+
   rootElement.appendChild(element);
 }
 
@@ -85,3 +111,12 @@ function calculate(lastUpdated) {
   const diffSeconds = Math.ceil(diffTime / (1000));
   return diffSeconds;
 }
+
+
+
+
+// { DISABLED! (only plays on HS)
+//   "channel": "ShoXx__",
+//   "character": "Cole Jones",
+//   "organisation": "Zivilist"
+// }
