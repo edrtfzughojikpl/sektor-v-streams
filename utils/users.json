@@ -210,6 +210,11 @@
     "organisation": "Raketes Kiosk"
   },
   {
+    "channel": "Spliddorama",
+    "character": "Arnold Walkowski",
+    "organisation": "Raketes Kiosk"
+  },
+  {
     "channel": "Torro",
     "character": "Bob Manboo",
     "organisation": "CNT News"
@@ -262,7 +267,11 @@
   {
     "channel": "fenrir_rp",
     "character": "Han Nakamura",
-    "organisation": "Yakuza"
+    "organisation": "Yakuza",
+    "otherChars": [{
+      "char": "Paco Hernandez",
+      "orga": "Zivilist"
+    }]
   },
   {
     "channel": "Ohozelot",
@@ -297,6 +306,11 @@
   {
     "channel": "Grueeeen",
     "character": "Leslie Cheng",
+    "organisation": "Sons of Light"
+  },
+  {
+    "channel": "keisii10",
+    "character": "Scott 'Mr. White' Norris",
     "organisation": "Sons of Light"
   },
   {
