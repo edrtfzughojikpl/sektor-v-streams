@@ -1,609 +1,609 @@
 [
-	{
-		"channel": "117Entertainment",
-		"character": "Yoshiaki Sugawara",
-		"organisation": "CNT News"
-	},
-	{
-		"channel": "1nicesmaedchen",
-		"character": "Yuki Nakamura",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "AsterPewPew",
-		"character": "Johnny Laser",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "AzeRTV",
-		"character": "Thomas Hendrik",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "BeardBro_Teddy",
-		"character": "Ted 'Teddy' Hrfnass",
-		"organisation": "Yakuza"
-	},
-	{
-		"channel": "BenzsonTV",
-		"character": "Murat Amed",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "BlueHawk_Down",
-		"character": "Dominik Hotch",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "Bounty92",
-		"character": "Eddi Kingston",
-		"organisation": "Zivilist",
-		"otherChars": [
-			{
-				"char": "Hartmut Jenssen",
-				"orga": "Zivilist"
-			}
-		]
-	},
-	{
-		"channel": "BukkitFAQ",
-		"character": "Joel Kroll",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Cyb3rl",
-		"character": "Sean ?",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "DarealAL",
-		"character": "Frank Nathaniel Stein",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Dekarldent",
-		"character": "Vladimir Vladimirovich Powlow",
-		"organisation": "Polizei",
-		"otherChars": [
-			{
-				"char": "Michael Ferdinant",
-				"orga": "Einreiseamt"
-			}
-		]
-	},
-	{
-		"channel": "DocPulle",
-		"character": "Günther Tetzlaff",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "DonFreez",
-		"character": "Franklin White",
-		"organisation": "Car Wash"
-	},
-	{
-		"channel": "DunkelBluePeer",
-		"character": "?",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "EhrenFate",
-		"character": "Kornelius Kambach",
-		"organisation": "Sons of Light"
-	},
-	{
-		"channel": "ErnstPeter",
-		"character": "Ethan Dumond",
-		"organisation": "Zivilist",
-		"otherChars": [
-			{
-				"char": "Peter Robert",
-				"orga": "Einreiseamt"
-			}
-		]
-	},
-	{
-		"channel": "Feraganor",
-		"character": "Roderik Schulz",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Fl3ischsalat",
-		"character": "Vincent Van de Bergh",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Freebyx",
-		"character": "Fynnja Waskana",
-		"organisation": "Mediziner"
-	},
-	{
-		"channel": "FurkiTV",
-		"character": "Steffano Alfonso",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "GandhiLive",
-		"character": "Pascal Schröder",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "GensoTV",
-		"character": "Edward Maurice Dante",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Goblin_Live",
-		"character": "Johannes Keller",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Grueeeen",
-		"character": "Leslie Cheng",
-		"organisation": "Sons of Light"
-	},
-	{
-		"channel": "HaGee",
-		"character": "Tatanga Wokadeh",
-		"organisation": "Polizei",
-		"otherChars": [
-			{
-				"char": "Willy",
-				"orga": "Einreiseamt"
-			}
-		]
-	},
-	{
-		"channel": "Hennerlive",
-		"character": "Harry Schmidt",
-		"organisation": "SecuroServ"
-	},
-	{
-		"channel": "HerrHarley",
-		"character": "Karl-Heinz Unger",
-		"organisation": "Anwalt",
-		"otherChars": [
-			{
-				"char": "Kevin Ronny Paschulke",
-				"orga": "Zivilist"
-			}
-		]
-	},
-	{
-		"channel": "HughWinters",
-		"character": "Gustavo Harrera",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "Hugsl4y",
-		"character": "Kofi O'Hara",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "JamesDE",
-		"character": "'Nacho'",
-		"organisation": "Unicorn"
-	},
-	{
-		"channel": "Jay_Corner",
-		"character": "Sanchez Rodriguez Gonzales",
-		"organisation": "Zivilist",
-		"otherChars": [
-			{
-				"char": "Cristos Passalakis",
-				"orga": "Einreiseamt"
-			},
-			{
-				"char": "Boban Romano",
-				"orga": "Polizei"
-			},
-			{
-				"char": "Oscar Bolento",
-				"orga": "Zivilist"
-			},
-			{
-				"char": "Timothy Maria Valdez",
-				"orga": "Zivilist"
-			},
-			{
-				"char": "Marek Kowalczyk",
-				"orga": "Zivilist"
-			},
-			{
-				"char": "Lawrence O'Dare",
-				"orga": "Zivilist"
-			},
-			{
-				"char": "Valerie Marquez",
-				"orga": "Zivilist"
-			}
-		]
-	},
-	{
-		"channel": "King_Kasy",
-		"character": "David Miller",
-		"organisation": "Miller's Craft Bar"
-	},
-	{
-		"channel": "Kryptophox",
-		"character": "Danny Vera",
-		"organisation": "SecuroServ"
-	},
-	{
-		"channel": "LadyMiiLoo",
-		"character": "Miilo Wonder",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "MasterZwerg1",
-		"character": "Jack Stahl",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "Neonox",
-		"character": "Sam De Ville",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "Nexus92",
-		"character": "Luka Kovacic",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "OberstRanzi",
-		"character": "Alexandra Lynch",
-		"organisation": "Lost MC"
-	},
-	{
-		"channel": "Ohozelot",
-		"character": "Yami Thevy Hosho",
-		"organisation": "Yakuza"
-	},
-	{
-		"channel": "OliwoodTV",
-		"character": "Sigismundo Marquez",
-		"organisation": "North Light Church"
-	},
-	{
-		"channel": "P4NCAKS",
-		"character": "J. Coody",
-		"organisation": "Yakuza"
-	},
-	{
-		"channel": "PaterJudas",
-		"character": "Harald Geier",
-		"organisation": "Sons of Light"
-	},
-	{
-		"channel": "Prinzenspiele",
-		"character": "Maurice Eggers",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "R3KK0N",
-		"character": "Wadim Zorka",
-		"organisation": "Unicorn"
-	},
-	{
-		"channel": "R4pst3r",
-		"character": "Dwayne Hayford",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "Raz3r_Gaming",
-		"character": "Juan Pablo Guzmàn",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "RealKeuleMeule",
-		"character": "Junus ?",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Ryskal",
-		"character": "Nick O'Brien",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "S3riuxTV",
-		"character": "Derek Durand",
-		"organisation": "SecuroServ"
-	},
-	{
-		"channel": "SadFaceSteve",
-		"character": "Jensen Kramer",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "Sarooman",
-		"character": "Thomas Harrison",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "SeFrOn__",
-		"character": "Jedediah O'Delecto",
-		"organisation": "DNTVN"
-	},
-	{
-		"channel": "SergejAbramczyk",
-		"character": "Sergej Abramczyk",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "SlodyTV",
-		"character": "Valerie Kossicante Springs",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Snowryo",
-		"character": "Darrow Bredan",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "Spliddorama",
-		"character": "Arnold Walkowski",
-		"organisation": "Raketes Kiosk"
-	},
-	{
-		"channel": "Staiy",
-		"character": "Manfred Lensch",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "TartarosHD",
-		"character": "Mark Muth",
-		"organisation": "Taxi"
-	},
-	{
-		"channel": "TheBlueEyeGaming",
-		"character": "John Delgardo",
-		"organisation": "Mediziner"
-	},
-	{
-		"channel": "TheGermanSausage",
-		"character": "Jupp Schmitz",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "The_Bavarian_Barbarian",
-		"character": "G. Gruber",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Tomovidner",
-		"character": "Tom Vidner",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "Tonny__Tong",
-		"character": "Tonny Tong",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Tony__C",
-		"character": "Kalle Schimanski",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "Torro",
-		"character": "Bob Manboo",
-		"organisation": "CNT News"
-	},
-	{
-		"channel": "Vaspid_",
-		"character": "Ali Diaz",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "Visenaa",
-		"character": "Aurora Quinn",
-		"organisation": "Mediziner"
-	},
-	{
-		"channel": "Zintelinho",
-		"character": "James Riker",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "daniespielt",
-		"character": "Steffi ?",
-		"organisation": "Mediziner"
-	},
-	{
-		"channel": "denella_",
-		"character": "Claire Mitchel",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "derHobbs",
-		"character": "Vincent Hobbs",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "doenilein",
-		"character": "Tristan Kane",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "dudeSELECT",
-		"character": "?",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "duplaix",
-		"character": "Matteo de Luca",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "fenrir_rp",
-		"character": "Han Nakamura",
-		"organisation": "Yakuza",
-		"otherChars": [
-			{
-				"char": "Paco Hernandez",
-				"orga": "Zivilist"
-			}
-		]
-	},
-	{
-		"channel": "hc_dizee",
-		"character": "Siggi Lentes",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "issprice",
-		"character": "Luis Aiden Price",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "kalle_bierbaum",
-		"character": "?",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "kampf_assis",
-		"character": "Pietro Macareno",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "keisii10",
-		"character": "Scott 'Mr. White' Norris",
-		"organisation": "Sons of Light"
-	},
-	{
-		"channel": "kenanebanane",
-		"character": "Leopold Kaiser",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "kiki_chikila",
-		"character": "Genevieve Grey",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "kingsm1le",
-		"character": "Jamal Cooper",
-		"organisation": "Schwarzwasser"
-	},
-	{
-		"channel": "konlanx",
-		"character": "Michael Williams",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "laacki1",
-		"character": "Kevin 'Lucky' Junior",
-		"organisation": "SecuroServ"
-	},
-	{
-		"channel": "line___",
-		"character": "Billy Brown",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "luke_stinson",
-		"character": "?",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "marked_by_lamb",
-		"character": "Beezy Campbell",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "masssel1991",
-		"character": "Christopher William",
-		"organisation": "Taxi"
-	},
-	{
-		"channel": "minirakete",
-		"character": "Ashanti West",
-		"organisation": "Raketes Kiosk"
-	},
-	{
-		"channel": "missdeepblack",
-		"character": "Mirina Caruso",
-		"organisation": "Mediziner"
-	},
-	{
-		"channel": "onion_reaper",
-		"character": "Cody Brooks",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "p41n_",
-		"character": "Bill von Crastenburg",
-		"organisation": "North Light Church"
-	},
-	{
-		"channel": "paddismile",
-		"character": "Tyrese Johnson",
-		"organisation": "Southside"
-	},
-	{
-		"channel": "realdeus",
-		"character": "Lio White",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "shanu999",
-		"character": "Sam Walker",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "sleepix94",
-		"character": "Owen ?",
-		"organisation": "Los Santos Customs"
-	},
-	{
-		"channel": "sney7",
-		"character": "Jay Klain ",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "sophiasweetheart",
-		"character": "Sophia Smith",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "tuned27",
-		"character": "Logan ?",
-		"organisation": "Sektor Cars"
-	},
-	{
-		"channel": "unholt",
-		"character": "Thijs van der Kaas",
-		"organisation": "DNTVN"
-	},
-	{
-		"channel": "valkjre",
-		"character": "Kurimo",
-		"organisation": "Polizei"
-	},
-	{
-		"channel": "w0llex_",
-		"character": "?",
-		"organisation": "Zivilist"
-	},
-	{
-		"channel": "whoiswolfmedia",
-		"character": "Helmut Rakete",
-		"organisation": "Raketes Kiosk"
-	},
-	{
-		"channel": "worek",
-		"character": "Dr. Montgomery Sunderland",
-		"organisation": "Justiz",
-		"otherChars": [
-			{
-				"char": "Bo",
-				"orga": "Zivilist"
-			}
-		]
-	},
-	{
-		"channel": "zKazee",
-		"character": "Seek Wynn",
-		"organisation": "Zivilist"
-	}
+  {
+    "channel": "117Entertainment",
+    "character": "Yoshiaki Sugawara",
+    "organisation": "CNT News"
+  },
+  {
+    "channel": "1nicesmaedchen",
+    "character": "Yuki Nakamura",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "AsterPewPew",
+    "character": "Johnny Laser",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "AzeRTV",
+    "character": "Thomas Hendrik",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "BeardBro_Teddy",
+    "character": "Ted 'Teddy' Hrfnass",
+    "organisation": "Yakuza"
+  },
+  {
+    "channel": "BenzsonTV",
+    "character": "Murat Amed",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "BlueHawk_Down",
+    "character": "Dominik Hotch",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "Bounty92",
+    "character": "Eddi Kingston",
+    "organisation": "Zivilist",
+    "otherChars": [
+      {
+        "char": "Hartmut Jenssen",
+        "orga": "Zivilist"
+      }
+    ]
+  },
+  {
+    "channel": "BukkitFAQ",
+    "character": "Joel Kroll",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Cyb3rl",
+    "character": "Sean ?",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "daniespielt",
+    "character": "Steffi ?",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "DarealAL",
+    "character": "Frank Nathaniel Stein",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Dekarldent",
+    "character": "Vladimir Vladimirovich Powlow",
+    "organisation": "Polizei",
+    "otherChars": [
+      {
+        "char": "Michael Ferdinant",
+        "orga": "Einreiseamt"
+      }
+    ]
+  },
+  {
+    "channel": "denella_",
+    "character": "Claire Mitchel",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "derHobbs",
+    "character": "Vincent Hobbs",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "DocPulle",
+    "character": "Günther Tetzlaff",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "doenilein",
+    "character": "Tristan Kane",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "DonFreez",
+    "character": "Franklin White",
+    "organisation": "Car Wash"
+  },
+  {
+    "channel": "dudeSELECT",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "DunkelBluePeer",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "duplaix",
+    "character": "Matteo de Luca",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "EhrenFate",
+    "character": "Kornelius Kambach",
+    "organisation": "Sons of Light"
+  },
+  {
+    "channel": "ErnstPeter",
+    "character": "Ethan Dumond",
+    "organisation": "Zivilist",
+    "otherChars": [
+      {
+        "char": "Peter Robert",
+        "orga": "Einreiseamt"
+      }
+    ]
+  },
+  {
+    "channel": "fenrir_rp",
+    "character": "Han Nakamura",
+    "organisation": "Yakuza",
+    "otherChars": [
+      {
+        "char": "Paco Hernandez",
+        "orga": "Zivilist"
+      }
+    ]
+  },
+  {
+    "channel": "Feraganor",
+    "character": "Roderik Schulz",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Fl3ischsalat",
+    "character": "Vincent Van de Bergh",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Freebyx",
+    "character": "Fynnja Waskana",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "FurkiTV",
+    "character": "Steffano Alfonso",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "GandhiLive",
+    "character": "Pascal Schröder",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "GensoTV",
+    "character": "Edward Maurice Dante",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Goblin_Live",
+    "character": "Johannes Keller",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Grueeeen",
+    "character": "Leslie Cheng",
+    "organisation": "Sons of Light"
+  },
+  {
+    "channel": "HaGee",
+    "character": "Tatanga Wokadeh",
+    "organisation": "Polizei",
+    "otherChars": [
+      {
+        "char": "Willy",
+        "orga": "Einreiseamt"
+      }
+    ]
+  },
+  {
+    "channel": "hc_dizee",
+    "character": "Siggi Lentes",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Hennerlive",
+    "character": "Harry Schmidt",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "HerrHarley",
+    "character": "Karl-Heinz Unger",
+    "organisation": "Anwalt",
+    "otherChars": [
+      {
+        "char": "Kevin Ronny Paschulke",
+        "orga": "Zivilist"
+      }
+    ]
+  },
+  {
+    "channel": "HughWinters",
+    "character": "Gustavo Harrera",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "Hugsl4y",
+    "character": "Kofi O'Hara",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "issprice",
+    "character": "Luis Aiden Price",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "JamesDE",
+    "character": "'Nacho'",
+    "organisation": "Unicorn"
+  },
+  {
+    "channel": "Jay_Corner",
+    "character": "Sanchez Rodriguez Gonzales",
+    "organisation": "Zivilist",
+    "otherChars": [
+      {
+        "char": "Cristos Passalakis",
+        "orga": "Einreiseamt"
+      },
+      {
+        "char": "Boban Romano",
+        "orga": "Polizei"
+      },
+      {
+        "char": "Oscar Bolento",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Timothy Maria Valdez",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Marek Kowalczyk",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Lawrence O'Dare",
+        "orga": "Zivilist"
+      },
+      {
+        "char": "Valerie Marquez",
+        "orga": "Zivilist"
+      }
+    ]
+  },
+  {
+    "channel": "kalle_bierbaum",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "kampf_assis",
+    "character": "Pietro Macareno",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "keisii10",
+    "character": "Scott 'Mr. White' Norris",
+    "organisation": "Sons of Light"
+  },
+  {
+    "channel": "kenanebanane",
+    "character": "Leopold Kaiser",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "kiki_chikila",
+    "character": "Genevieve Grey",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "King_Kasy",
+    "character": "David Miller",
+    "organisation": "Miller's Craft Bar"
+  },
+  {
+    "channel": "kingsm1le",
+    "character": "Jamal Cooper",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "konlanx",
+    "character": "Michael Williams",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Kryptophox",
+    "character": "Danny Vera",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "laacki1",
+    "character": "Kevin 'Lucky' Junior",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "LadyMiiLoo",
+    "character": "Miilo Wonder",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "line___",
+    "character": "Billy Brown",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "luke_stinson",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "marked_by_lamb",
+    "character": "Beezy Campbell",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "masssel1991",
+    "character": "Christopher William",
+    "organisation": "Taxi"
+  },
+  {
+    "channel": "MasterZwerg1",
+    "character": "Jack Stahl",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "minirakete",
+    "character": "Ashanti West",
+    "organisation": "Raketes Kiosk"
+  },
+  {
+    "channel": "missdeepblack",
+    "character": "Mirina Caruso",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "Neonox",
+    "character": "Sam De Ville",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Nexus92",
+    "character": "Luka Kovacic",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "OberstRanzi",
+    "character": "Alexandra Lynch",
+    "organisation": "Lost MC"
+  },
+  {
+    "channel": "Ohozelot",
+    "character": "Yami Thevy Hosho",
+    "organisation": "Yakuza"
+  },
+  {
+    "channel": "OliwoodTV",
+    "character": "Sigismundo Marquez",
+    "organisation": "North Light Church"
+  },
+  {
+    "channel": "onion_reaper",
+    "character": "Cody Brooks",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "p41n_",
+    "character": "Bill von Crastenburg",
+    "organisation": "North Light Church"
+  },
+  {
+    "channel": "P4NCAKS",
+    "character": "J. Coody",
+    "organisation": "Yakuza"
+  },
+  {
+    "channel": "paddismile",
+    "character": "Tyrese Johnson",
+    "organisation": "Southside"
+  },
+  {
+    "channel": "PaterJudas",
+    "character": "Harald Geier",
+    "organisation": "Sons of Light"
+  },
+  {
+    "channel": "Prinzenspiele",
+    "character": "Maurice Eggers",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "R3KK0N",
+    "character": "Wadim Zorka",
+    "organisation": "Unicorn"
+  },
+  {
+    "channel": "R4pst3r",
+    "character": "Dwayne Hayford",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Raz3r_Gaming",
+    "character": "Juan Pablo Guzmàn",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "realdeus",
+    "character": "Lio White",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "RealKeuleMeule",
+    "character": "Junus ?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Ryskal",
+    "character": "Nick O'Brien",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "S3riuxTV",
+    "character": "Derek Durand",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "SadFaceSteve",
+    "character": "Jensen Kramer",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "Sarooman",
+    "character": "Thomas Harrison",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "SeFrOn__",
+    "character": "Jedediah O'Delecto",
+    "organisation": "DNTVN"
+  },
+  {
+    "channel": "SergejAbramczyk",
+    "character": "Sergej Abramczyk",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "shanu999",
+    "character": "Sam Walker",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "sleepix94",
+    "character": "Owen ?",
+    "organisation": "Los Santos Customs"
+  },
+  {
+    "channel": "SlodyTV",
+    "character": "Valerie Kossicante Springs",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "sney7",
+    "character": "Jay Klain ",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Snowryo",
+    "character": "Darrow Bredan",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "sophiasweetheart",
+    "character": "Sophia Smith",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Spliddorama",
+    "character": "Arnold Walkowski",
+    "organisation": "Raketes Kiosk"
+  },
+  {
+    "channel": "Staiy",
+    "character": "Manfred Lensch",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "TartarosHD",
+    "character": "Mark Muth",
+    "organisation": "Taxi"
+  },
+  {
+    "channel": "The_Bavarian_Barbarian",
+    "character": "G. Gruber",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "TheBlueEyeGaming",
+    "character": "John Delgardo",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "TheGermanSausage",
+    "character": "Jupp Schmitz",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Tomovidner",
+    "character": "Tom Vidner",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Tonny__Tong",
+    "character": "Tonny Tong",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Tony__C",
+    "character": "Kalle Schimanski",
+    "organisation": "Schwarzwasser"
+  },
+  {
+    "channel": "Torro",
+    "character": "Bob Manboo",
+    "organisation": "CNT News"
+  },
+  {
+    "channel": "tuned27",
+    "character": "Logan ?",
+    "organisation": "Sektor Cars"
+  },
+  {
+    "channel": "unholt",
+    "character": "Thijs van der Kaas",
+    "organisation": "DNTVN"
+  },
+  {
+    "channel": "valkjre",
+    "character": "Kurimo",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Vaspid_",
+    "character": "Ali Diaz",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Visenaa",
+    "character": "Aurora Quinn",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "w0llex_",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "whoiswolfmedia",
+    "character": "Helmut Rakete",
+    "organisation": "Raketes Kiosk"
+  },
+  {
+    "channel": "worek",
+    "character": "Dr. Montgomery Sunderland",
+    "organisation": "Justiz",
+    "otherChars": [
+      {
+        "char": "Bo",
+        "orga": "Zivilist"
+      }
+    ]
+  },
+  {
+    "channel": "Zintelinho",
+    "character": "James Riker",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "zKazee",
+    "character": "Seek Wynn",
+    "organisation": "Zivilist"
+  }
 ]
