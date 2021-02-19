@@ -133,6 +133,20 @@
     "organisation": "Polizei"
   },
   {
+    "channel": "MasterZwerg1",
+    "character": "Jack Stahl",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "HaGee",
+    "character": "Tatanga Wokadeh",
+    "organisation": "Polizei",
+    "otherChars": [{
+      "char": "Willy",
+      "orga": "Einreiseamt"
+    }]
+  },
+  {
     "channel": "Visenaa",
     "character": "Aurora Quinn",
     "organisation": "Mediziner"
@@ -143,15 +157,6 @@
     "organisation": "Mediziner"
   },
   {
-    "channel": "HaGee",
-    "character": "Tatanga Wokadeh",
-    "organisation": "Mediziner",
-    "otherChars": [{
-      "char": "Willy",
-      "orga": "Einreiseamt"
-    }]
-  },
-  {
     "channel": "TheBlueEyeGaming",
     "character": "John Delgardo",
     "organisation": "Mediziner"
@@ -159,6 +164,11 @@
   {
     "channel": "missdeepblack",
     "character": "Mirina Caruso",
+    "organisation": "Mediziner"
+  },
+  {
+    "channel": "daniespielt",
+    "character": "Steffi ?",
     "organisation": "Mediziner"
   },
   {
@@ -190,6 +200,16 @@
     "organisation": "SecuroServ"
   },
   {
+    "channel": "S3riuxTV",
+    "character": "Derek Durand",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "laacki1",
+    "character": "Kevin 'Lucky' Junior",
+    "organisation": "SecuroServ"
+  },
+  {
     "channel": "DonFreez",
     "character": "Franklin White",
     "organisation": "Car Wash"
@@ -215,6 +235,11 @@
     "organisation": "Raketes Kiosk"
   },
   {
+    "channel": "minirakete",
+    "character": "Ashanti West",
+    "organisation": "Raketes Kiosk"
+  },
+  {
     "channel": "Torro",
     "character": "Bob Manboo",
     "organisation": "CNT News"
@@ -230,6 +255,11 @@
     "organisation": "DNTVN"
   },
   {
+    "channel": "unholt",
+    "character": "Thijs van der Kaas",
+    "organisation": "DNTVN"
+  },
+  {
     "channel": "TartarosHD",
     "character": "Mark Muth",
     "organisation": "Taxi"
@@ -242,6 +272,11 @@
   {
     "channel": "p41n_",
     "character": "Bill von Crastenburg",
+    "organisation": "North Light Church"
+  },
+  {
+    "channel": "OliwoodTV",
+    "character": "Sigismundo Marquez",
     "organisation": "North Light Church"
   },
   {
@@ -324,11 +359,6 @@
     "organisation": "Zivilist"
   },
   {
-    "channel": "minirakete",
-    "character": "Ashanti West",
-    "organisation": "Zivilist"
-  },
-  {
     "channel": "onion_reaper",
     "character": "Cody Brooks",
     "organisation": "Zivilist"
@@ -391,11 +421,6 @@
         "orga": "Zivilist"
       }
     ]
-  },
-  {
-    "channel": "OliwoodTV",
-    "character": "Sigismundo Marquez",
-    "organisation": "Zivilist"
   },
   {
     "channel": "FurkiTV",
@@ -467,7 +492,7 @@
   },
   {
     "channel": "BenzsonTV",
-    "character": "Murat ?",
+    "character": "Murat Amed",
     "organisation": "Zivilist"
   },
   {
@@ -483,11 +508,6 @@
   {
     "channel": "1nicesmaedchen",
     "character": "Yuki Nakamura",
-    "organisation": "Zivilist"
-  },
-  {
-    "channel": "MasterZwerg1",
-    "character": "Jack Stahl",
     "organisation": "Zivilist"
   },
   {
@@ -518,6 +538,56 @@
   {
     "channel": "kenanebanane",
     "character": "Leopold Kaiser",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Goblin_Live",
+    "character": "Johannes Keller",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "TheGermanSausage",
+    "character": "Jupp Schmitz",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "shanu999",
+    "character": "Sam Walker",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "zKazee",
+    "character": "Seek Wynn",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Sarooman",
+    "character": "Thomas Harrison",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "AzeRTV",
+    "character": "Thomas Hendrik",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "SlodyTV",
+    "character": "Valerie Kossicante Springs",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "DunkelBluePeer",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "luke_stinson",
+    "character": "?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "w0llex_",
+    "character": "?",
     "organisation": "Zivilist"
   }
 ]
