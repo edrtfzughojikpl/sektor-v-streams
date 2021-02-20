@@ -173,7 +173,6 @@ const updateList = () => {
 
   __channels.forEach(channel => {
     if (einblendungsTyp == 0 || einblendungsTyp == 2) {
-
       if (spielTyp == 0) {
         if (!channel.stream) return;
         if (channel.stream.game != 'Grand Theft Auto V') return;
@@ -183,23 +182,6 @@ const updateList = () => {
         }
     }
     createNewCard(channel);
-    //   let card = document.querySelector(`[data-name="${channel.user.display_name}"]`);
-    //   if (!card) {
-    //     // if (channel.stream) {
-    // 
-    //     createNewCard(channel);
-    //     // }
-    //     // }
-    //   } else
-    //   if (!channel.stream) {
-    //     console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
-    //     card.parentElement.parentElement.remove();
-    //   } else {
-    //     if (channel.stream.game != 'Grand Theft Auto V') {
-    //       console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
-    //       card.parentElement.parentElement.remove();
-    //     }
-    //   }
   })
 }
 
