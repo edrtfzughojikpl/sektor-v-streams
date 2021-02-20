@@ -4,6 +4,60 @@
 <head>
   <script src="/socket.io/socket.io.js"></script>
   <%- include('../partials/header.ejs') %>
+  <script>
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+    // time for countdown
+    let Seconds = 0;
+    // last data
+    let _channels;
+    /*
+      0 - alphabet
+      1 - fraktion
+      2 - viewer
+      3 - individuell
+    */
+    let sortierungsTyp = (getCookie("sortierungsTyp") != null) ? getCookie("sortierungsTyp") : 0;
+    /*
+      0 - online
+      1 - offline
+      2 - online&offline
+      3 - nichts(?)
+    */
+    let einblendungsTyp = (getCookie("einblendungsTyp") != null) ? getCookie("einblendungsTyp") : 0;
+
+    if (sortierungsTyp == '') sortierungsTyp = 0;
+    if (einblendungsTyp == '') einblendungsTyp = 0;
+    /*
+      0 - GTA V
+      1 - alles
+    */
+
+    let fraktionen = (getCookie("fraktionen") != null) ? getCookie("fraktionen") : [];
+
+    let spielTyp = (getCookie("spielTyp") != null) ? getCookie("spielTyp") : 0;
+    if (sortierungsTyp == '') sortierungsTyp = 0;
+    if (einblendungsTyp == '') einblendungsTyp = 0;
+    if (spielTyp == '') spielTyp = 0;
+  </script>
 </head>
 
 <body>
@@ -33,65 +87,138 @@
           <input disabled type="radio" name="radio">
           <span class="checkmark"></span>
         </label>
+        <div>Spiel</div>
+        <label class="container1">GTA V
+          <input type="radio" name="radio1" checked="checked">
+          <span class="checkmark1"></span>
+        </label>
+        <label class="container1">alles
+          <input type="radio" name="radio1">
+          <span class="checkmark1"></span>
+        </label>
         <div>Einblendung</div>
         <label class="container0">Online
-          <input disabled type="checkbox" checked="checked">
+          <input type="checkbox" checked="checked">
           <span class="checkmark0"></span>
         </label>
         <label class="container0">Offline
-          <input disabled type="checkbox">
+          <input type="checkbox">
           <span class="checkmark0"></span>
         </label>
+        <div id="frak">
+          <div>Fraktionen</div>
+          <label class="container2">Polizei
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Mediziner
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Justiz
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Anwalt
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Schwarzwasser
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">SecuroServ
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">CarWash
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">SektorCars
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Los Santos Customs
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Raketes Kiosk
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">CNT News
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">DNTVN
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Taxi
+            <input type="checkbox" checked="checked">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Zivilist
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          <label class="container2">Einreiseamt
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+        </div>
       </div>
     </div>
   </div>
-  <div id="root">
-    <div class="wrapper" data-isPlaceholder="true" data-isOnline="false" style="display: none;">
-      <div class="profile">
-        <div class="thumbnail">
-        </div>
-        <h3 class="name" data-name="Name"></h3>
-        <!-- <p class="title" data-title="Name"></p>
-      <p class="orga" data-orga="Name"></p> -->
-        <a class="btn" href="#" data-link="link"></a>
+  <div class="wrapper" data-isPlaceholder="true" data-isOnline="false" style="display: none;">
+    <div class="profile">
+      <div class="thumbnail">
       </div>
-      <div class="offline-lable">
-        <!-- <p class="stream-title"></p> -->
-        <!-- <details>
-        <summary>mehr Informationen</summary>
-        
-      </details> -->
-        <table style="margin-bottom: 10px;">
-          <thead>
-            <tr>
-              <th style="min-width: 115px">Charakter</th>
-              <th>Organisation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="char">
-            </tr>
-          </tbody>
-        </table>
-        <div class="icon" style="display: none">
-          <div class="tooltip">
-            <table>
-              <thead>
-                <tr>
-                  <th>Charakter</th>
-                  <th>Organisation</th>
-                </tr>
-              </thead>
-              <tbody class="moreChars">
-
-              </tbody>
-            </table>
-          </div>
-          <span style="color: rgb(200, 200, 200)">Mehr Charaktere?</span>
-        </div>
-        <!-- <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145" class="preview"> -->
-      </div>
+      <h3 class="name" data-name="Name"></h3>
+      <!-- <p class="title" data-title="Name"></p>
+    <p class="orga" data-orga="Name"></p> -->
+      <a class="btn" href="#" data-link="link"></a>
     </div>
+    <div class="offline-lable">
+      <!-- <p class="stream-title"></p> -->
+      <!-- <details>
+      <summary>mehr Informationen</summary>
+      
+    </details> -->
+      <table style="margin-bottom: 10px;">
+        <thead>
+          <tr>
+            <th style="min-width: 115px">Charakter</th>
+            <th>Organisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="char">
+          </tr>
+        </tbody>
+      </table>
+      <div class="icon" style="display: none">
+        <div class="tooltip">
+          <table>
+            <thead>
+              <tr>
+                <th>Charakter</th>
+                <th>Organisation</th>
+              </tr>
+            </thead>
+            <tbody class="moreChars">
+
+            </tbody>
+          </table>
+        </div>
+        <span style="color: rgb(200, 200, 200)">Mehr Charaktere?</span>
+      </div>
+      <!-- <img src="https://influencermarketinghub.com/wp-content/uploads/2020/06/Grid.png" height="145" class="preview"> -->
+    </div>
+  </div>
+  <div id="root">
+
   </div>
 
   <div id="footer">

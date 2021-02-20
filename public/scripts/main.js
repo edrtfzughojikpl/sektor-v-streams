@@ -1,44 +1,120 @@
-const socket = io();
+/*
+```````````````````````./Johannes/.``````````````````````````````````````````````````````````````````
+````````````````````:smMMMMNmmmMMNy-````````````````````````````````````````````````````````````````
+`````````````````-sNMMNho:.````.+dMMo```````````````````````````````````````````````````````````````
+```````````````-hMMMh/.```````````yMMs``````````````````````````````````````````````````````````````
+`````````````.yMMMy-```````````````dMM:`````````````````````````````````````````````````````````````
+````````````/mMMh-`````````````````/MMy`````````````````````````````````````````````````````````````
+```````````+MMNo```````````````````.NMN.````````````````````````````````````````````````````````````
+``````````:NMN/`````````````````````hMM/````````````````````````````````````````````````````````````
+``````````dMMo``````````````````````oMMs````````````````````````````````````````````````````````````
+`````````-MMN.``````````````````````:MMd````````````````````````````````````````````````````````````
+`````````-MMm````````````````````````mMM:```````````````````````````````````````````````````````````
+`````````.NMN.```````````````````````sMMs```````````````````````````````````````````````````````````
+``````````sMMo```````````````````````-NMN-``````````````````````````````````````````````````````````
+``````````.mMN-```````````````````````yMMh``````````````````````````````````````````````````````````
+```````````/NMd.``````````````````````.mMMs`````````````````````````````````````````````````````````
+````````````+MMd.``````````````````````-mMMy.````````````-sdmds-````````````````````````````````````
+`````````````/NMm/`````````````...``````-dMMNy:.`````.:+yNMMMMMN-```````````````````````````````````
+``````````````-dMMNs``````./ydNMMMd:``````+mMMMMNmmmNMMMMMMMMMMN-```````````````````````````````````
+````````````````/ydo````/hMMMMMddMMN-```````:sdNMMMMMMMMMMMMMMh.````````````````````````````````````
+``````````````````````:dMMMMd+..mMMo```````````.-:+ooyMMMMMMMy``````````````````````````````````````
+````````````````````.yMMMMd:```sMMh`````````````````.dMMMMMMh```````````````````````````````````````
+```````````````````-mMMMNo````.NMM:`````````````````+MMMMMMm.```````````````````````````````````````
+``````````````````:NMMMN:`````+MMd``````````````````dMMMMMM/````````````````````````````````````````
+`````````````````.mMMMN-``````oMMs`````````````````:MMMMMMd``````````````````````-::-.``````````````
+`````````````````yMMMM/```````oMMo`````````````````yMMMMMM/```````````````````-yNMMMMNdo.```````````
+````````````````:NMMMh````````/MMh````````````````.mMMMMMd```````.:-`````````.dMMMMMMMMMN/``````````
+````````````````oMMMM/`````````dMN:```````````````-MMMMMM+``````-mMM/`````````yMMMMMMMMMMN/`````````
+````````````````yMMMN.`````````:NMN:``````````````+MMMMMN.`````.mMMy```````````:shmNMMMMMMh`````````
+````````````````sMMMN.``````````-dMMy:`````````..`yMMMMMh``````hMMh`````````````````dMMMMMh`````````
+````````````````/MMMM+````````````+dMMNdysssydmMMdmMMMMM+`````+MMN.`````````````````hMMMMMo`````````
+````````````````.mMMMm.`````````````-+ydmNNNNmdyo/NMMMMN.````.mMMo`````````````````.NMMMMm.`````````
+`````````````````:NMMMd-`````````````````````````.NMMMMh`````+MMM-`````````````````sMMMMN:``````````
+``````````````````/NMMMNo.```````````````````````:MMMMMo`````dMMm`````````````````:NMMMM+```````````
+```````````````````-hMMMMNs:`````````````````````/MMMMM:````.NMMd````````````````-mMMMN/````````````
+`````````````````````/dMMMMMms/.`````````````````oMMMMm.````.NMMm.``````````````/NMMMd:`````````````
+```````````````````````:yNMMMMMNho:``````````````yMMMMh``````mMMM:````````````-yMMMNs.``````````````
+``````````````````````````:ymMMMMMMNho:.`````````dMMMMo``````oMMMd.````````./yNMMNy-````````````````
+`````````````````````````````-odNMMMMMMMmy+:.```-NMMMM-```````yMMMNs+///+sdNMMMd+.``````````````````
+````````````````````````````````.:sdNMMMMMMMMNdhmMMMMd`````````/dMMMMMMMMMMmy+.`````````````````````
+`````````````````````````````````````:+ydNMMMMMMMMMMN:```````````-/osyss+:.`````````````````````````
+`````````````````````````````````````````.-/Johannes+.```````````````````````````````````````````````
+*/
 
 const rootElement = document.getElementById("root");
+const socket = io();
+
+import createNewCard from "./createCard.js";
+
+import {
+  settingsButton,
+  sortierngsButton,
+  onlineofflineButton,
+  spielButton,
+  fraktionButton
+} from "./onClicks.js";
+
+settingsButton();
+sortierngsButton(() => {
+  setCookie("sortierungsTyp", sortierungsTyp, 365 * 5);
+  updateList();
+  console.log("sortierungsTyp: " + sortierungsTyp);
+  var checkBoxButtons = document.getElementsByClassName("container2");
+  if (sortierungsTyp != 1) {
+    document.getElementById('frak').style.filter = "grayscale(0.85)";
+    for (var i = 0; i < checkBoxButtons.length; i++) {
+      checkBoxButtons[i].firstElementChild.disabled = true;
+    }
+  } else {
+    for (var i = 0; i < checkBoxButtons.length; i++) {
+      checkBoxButtons[i].firstElementChild.disabled = false;
+    }
+    document.getElementById('frak').style.filter = "";
+  }
+});
+onlineofflineButton(() => {
+  setCookie("einblendungsTyp", einblendungsTyp, 365 * 5);
+  updateList();
+  console.log("einblendungsTyp: " + einblendungsTyp);
+});
+spielButton(() => {
+  setCookie("spielTyp", spielTyp, 365 * 5);
+  updateList();
+  console.log("spielTyp: " + spielTyp);
+});
+fraktionButton(() => {
+  setCookie("fraktionen", fraktionen, 365 * 5);
+  updateList();
+  console.log("fraktionen: " + fraktionen);
+});
+
+
 const timeElement = document.getElementById("time");
-const Placeholder = document.querySelector(".wrapper");
-
-let Seconds = 0;
 
 
-/*
-  0 - alphabet
-  1 - fraktion
-  2 - viewer
-  3 - individuell
-*/
-let sortierungsTyp = 0;
-
-/*
-  0 - online
-  1 - offline
-  2 - online&offline
-  3 - nichts(?)
-*/
-let einblendungsTyp = 0;
 
 
-let timer = setInterval(() => {
+setInterval(() => {
   updateTimer(Seconds);
   Seconds++;
 }, 1000);
 
 const updateTimer = (seconds) => {
-  passedSeconds = seconds;
+  let passedSeconds = seconds;
   let inSeconds = 150 - passedSeconds;
   var minutes = Math.floor(inSeconds / 60);
   var seconds = inSeconds - minutes * 60;
 
   timeElement.textContent = `${(minutes<10)?"0"+minutes:minutes}:${(seconds<10)?"0"+seconds:seconds}`;
 };
-
-let _channels;
+const calculate = (lastUpdated) => {
+  var startTime = new Date(lastUpdated);
+  var endTime = new Date();
+  const diffTime = Math.abs(endTime - startTime);
+  const diffSeconds = Math.ceil(diffTime / (1000));
+  return diffSeconds;
+}
 
 socket.on('data', ({
   channels,
@@ -51,178 +127,94 @@ socket.on('data', ({
   let passedSeconds = calculate(lastUpdated);
   Seconds = passedSeconds;
 
-  switch (sortierungsTyp) {
-    case 1:
-      channels.sort((a, b) => a.charInfo.organisation - b.charInfo.organisation);
-      break;
-    case 2:
-      channels.sort((a, b) => a.stream.viewer - b.stream.viewer);
-      break;
-    case 3:
-      //
-      break;
-    default:
-      break;
-  }
-
-  channels.forEach(channel => {
-    let card = document.querySelector(`[data-name="${channel.user.display_name}"]`);
-    if (!card) {
-      if (channel.stream) {
-        if (channel.stream.game == 'Grand Theft Auto V') {
-          createNewCard(channel);
-        }
-      }
-    } else
-    if (!channel.stream) {
-      console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
-      card.parentElement.parentElement.remove();
-    } else {
-      if (channel.stream.game != 'Grand Theft Auto V') {
-        console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
-        card.parentElement.parentElement.remove();
-      }
-    }
-  })
+  updateList();
 });
 
-const createNewCard = ({
-  user,
-  stream,
-  charInfo
-}) => {
-  let element = Placeholder.cloneNode(true);
-  element.style.display = "block";
-  let thumbnailDiv = element.querySelector(".thumbnail");
-  let displaynameDiv = element.querySelector(".name");
-  // let charnameDiv = element.querySelector(".title");
-  // let orgaDiv = element.querySelector(".orga");
-  let linkAHref = element.querySelector(".btn");
-  // let streamTitleP = element.querySelector(".stream-title");
-  let charRow = element.querySelector(".char");
-  let otherCharsRow = element.querySelector(".moreChars");
 
-  thumbnailDiv.style.backgroundImage = `url(${user.logo}`;
-  thumbnailDiv.style.backgroundPosition = "100% 100%";
-  thumbnailDiv.style.backgroundSize = "cover";
 
-  displaynameDiv.dataset.name = user.display_name;
-  // charnameDiv.dataset.title = charInfo.character;
-  // orgaDiv.dataset.title = charInfo.organisation;
-  linkAHref.dataset.link = `www.twitch.tv/${user.display_name}`;
-  linkAHref.href = `https://${linkAHref.dataset.link}`;
-  linkAHref.target = "_blank";
-  // streamTitleP.textContent = stream.channel.status;
-
-  let char = document.createElement("td");
-  let orga = document.createElement("td");
-  char.textContent = charInfo.character;
-  charRow.append(char);
-  orga.textContent = charInfo.organisation;
-  charRow.append(orga);
-
-  if (charInfo.otherChars) {
-    let icon = element.querySelector(".icon");
-    icon.style.display = "block";
-    charInfo.otherChars.forEach((item) => {
-      let tr = document.createElement("tr");
-      let charTo = document.createElement("td");
-      let orgaTo = document.createElement("td");
-      charTo.textContent = item.char;
-      orgaTo.textContent = item.orga;
-      tr.append(charTo);
-      tr.append(orgaTo);
-      otherCharsRow.append(tr);
-    })
-
-  }
-
-  rootElement.appendChild(element);
-}
-
-function calculate(lastUpdated) {
-  var startTime = new Date(lastUpdated);
-  var endTime = new Date();
-  const diffTime = Math.abs(endTime - startTime);
-  const diffSeconds = Math.ceil(diffTime / (1000));
-  return diffSeconds;
-}
-
-var elements = document.getElementsByClassName("container");
-
-var myFunction = function () {
-  switch (this.parentElement.textContent.replace(/\s/g, '')) {
-    case "Fraktion":
-      sortierungsTyp = 1;
-      break;
-    case "Viewer":
-      sortierungsTyp = 2;
-      break;
-    case "Individuell":
-      sortierungsTyp = 3;
-      break;
-    default: //Alphabetisch
-      sortierungsTyp = 0;
-      break;
-  }
-
-  switch (sortierungsTyp) {
+const updateList = () => {
+  _channels = _channels.sort((a, b) => a.user.display_name.localeCompare(b.user.display_name));
+  let __channels = _channels;
+  switch (parseInt(sortierungsTyp)) {
     case 1:
-      _channels = _channels.sort((a, b) => a.charInfo.organisation.localeCompare(b.charInfo.organisation));
+      __channels = __channels.sort((a, b) => a.charInfo.organisation.localeCompare(b.charInfo.organisation));
+      __channels = remove(__channels, "frak");
       break;
     case 2:
-      let __channels = _channels;
-      _channels = [];
-      __channels.forEach((channel) => {
-        if (channel.stream) _channels.push(channel);
-      });
-      _channels = _channels.sort((a, b) => {
+      __channels = remove(__channels, "off");
+      __channels = __channels.sort((a, b) => {
         return Number(b.stream.viewers) - Number(a.stream.viewers);
       });
       break;
     case 3:
-      //
+      //  individuell
       break;
     default:
-      _channels = _channels.sort((a, b) => a.user.display_name.localeCompare(b.user.display_name));
       break;
   }
-  
-  rootElement.innerHTML = "";
 
-  _channels.forEach(channel => {
-    let card = document.querySelector(`[data-name="${channel.user.display_name}"]`);
-    if (!card) {
-      if (channel.stream) {
-        if (channel.stream.game == 'Grand Theft Auto V') {
-          createNewCard(channel);
+  rootElement.innerHTML = '';
+
+  switch (parseInt(einblendungsTyp)) {
+    case 1:
+      __channels = remove(__channels, "on");
+      break;
+    case 2:
+
+      break;
+    case 3:
+      __channels = remove(__channels, "on");
+      __channels = remove(__channels, "off");
+      break;
+    default:
+      __channels = remove(__channels, "off");
+      break;
+  }
+
+  __channels.forEach(channel => {
+    if (einblendungsTyp == 0 || einblendungsTyp == 2) {
+
+      if (spielTyp == 0) {
+        if (!channel.stream) return;
+        if (channel.stream.game != 'Grand Theft Auto V') return;
+      } else if (spielTyp == 1)
+        if (channel.stream) {
+          if (channel.stream.game != 'Grand Theft Auto V') channel.notGTA = true;
         }
-      }
-    } else
-    if (!channel.stream) {
-      console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
-      card.parentElement.parentElement.remove();
-    } else {
-      if (channel.stream.game != 'Grand Theft Auto V') {
-        console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
-        card.parentElement.parentElement.remove();
-      }
     }
+    createNewCard(channel);
+    //   let card = document.querySelector(`[data-name="${channel.user.display_name}"]`);
+    //   if (!card) {
+    //     // if (channel.stream) {
+    // 
+    //     createNewCard(channel);
+    //     // }
+    //     // }
+    //   } else
+    //   if (!channel.stream) {
+    //     console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
+    //     card.parentElement.parentElement.remove();
+    //   } else {
+    //     if (channel.stream.game != 'Grand Theft Auto V') {
+    //       console.log(`${card.dataset.name} went offline!`, new Date().toLocaleString());
+    //       card.parentElement.parentElement.remove();
+    //     }
+    //   }
   })
-};
-
-for (var i = 0; i < elements.length; i++) {
-  elements[i].firstElementChild.addEventListener('click', myFunction, false);
 }
 
-var elements0 = document.getElementsByClassName("container0");
-
-var myFunction0 = function () {
-  console.log(this.parentElement.textContent.replace(/\s/g, ''));
-};
-
-for (var i = 0; i < elements0.length; i++) {
-  elements0[i].firstElementChild.addEventListener('click', myFunction0, false);
+const remove = (___channels, type) => {
+  let __channels = [];
+  ___channels.forEach((channel) => {
+    if (type == "off") {
+      if (channel.stream) __channels.push(channel);
+    } else if (type == "on") {
+      if (!channel.stream) __channels.push(channel);
+    } else if (type == "frak") {
+      if (fraktionen.includes(channel.charInfo.organisation)) __channels.push(channel);
+    }
+  });
+  return __channels;
 }
 
 

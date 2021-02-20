@@ -230,6 +230,7 @@ th{
   min-width: 160px;
   z-index: 1;
   padding: 0 15px;
+  right:0;
 }
 
 .dropdown-content div{
@@ -241,14 +242,14 @@ th{
 
 .dropdown-content label:hover {background-color: #202020;}
 
-.dropdown:active .dropdown-content, .dropdown:focus .dropdown-content, .dropdown:hover .dropdown-content, .dropdown:target .dropdown-content {display: block;  right:0;}
+/* .dropdown:active .dropdown-content, .dropdown:focus .dropdown-content, .dropdown:hover .dropdown-content, .dropdown:target .dropdown-content {display: block;  } */
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 
 /* The container */
-.container {
+.container, .container1 {
   display: block;
   position: relative;
   padding-left: 15px;
@@ -262,14 +263,14 @@ th{
 }
 
 /* Hide the browser's default radio button */
-.container input {
+.container input, .container1 input{
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
 /* Create a custom radio button */
-.checkmark {
+.checkmark, .checkmark1{
   position: absolute;
   top: 0;
   left: 0;
@@ -280,29 +281,29 @@ th{
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input ~ .checkmark,.container1:hover input ~ .checkmark1 {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked ~ .checkmark,.container1 input:checked ~ .checkmark1 {
   background-color: #772ce8;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+.checkmark:after,.checkmark1:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark:after,.container1 input:checked ~ .checkmark1:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+.container .checkmark:after,.container1 .checkmark1:after  {
  	top: 6px;
 	left: 6px;
 	width: 8px;
@@ -315,7 +316,7 @@ th{
 
 
 /* The container */
-.container0 {
+.container0, .container2 {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -329,7 +330,7 @@ th{
 }
 
 /* Hide the browser's default checkbox */
-.container0 input {
+.container0 input,.container2 input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -338,7 +339,7 @@ th{
 }
 
 /* Create a custom checkbox */
-.checkmark0 {
+.checkmark0,.checkmark2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -348,29 +349,29 @@ th{
 }
 
 /* On mouse-over, add a grey background color */
-.container0:hover input ~ .checkmark0 {
+.container0:hover input ~ .checkmark0,.container2:hover input ~ .checkmark2 {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container0 input:checked ~ .checkmark0 {
+.container0 input:checked ~ .checkmark0,.container2 input:checked ~ .checkmark2 {
   background-color: #772ce8;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark0:after {
+.checkmark0:after,.checkmark2:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.container0 input:checked ~ .checkmark0:after {
+.container0 input:checked ~ .checkmark0:after,.container2 input:checked ~ .checkmark2:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container0 .checkmark0:after {
+.container0 .checkmark0:after,.container2 .checkmark2:after {
   left: 6px;
   top: 2px;
   width: 5px;
