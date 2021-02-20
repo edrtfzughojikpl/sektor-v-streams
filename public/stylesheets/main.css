@@ -231,6 +231,8 @@ th{
   z-index: 1;
   padding: 0 15px;
   right:0;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .dropdown-content div{
