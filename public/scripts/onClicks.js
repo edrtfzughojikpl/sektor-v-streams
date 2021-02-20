@@ -184,7 +184,7 @@ const fraktionButton = (callback) => {
   }
 
   var fraktionButtonsonClick = function () {
-    fraktionen = fraktionen.split(',');
+    if(fraktionen.length > 0) fraktionen = fraktionen.split(',');
     let pos = fraktionen.indexOf(this.parentElement.textContent.replace(/\s/g, ''));
     if (pos !== -1) {
       fraktionen.splice(pos, 1);
