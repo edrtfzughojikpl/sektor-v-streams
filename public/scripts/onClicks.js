@@ -7,7 +7,6 @@ const settingsButton = () => {
     } else {
       dropDown.style.display = "block";
       var checkBoxButtons = document.getElementsByClassName("container2");
-      console.log(checkBoxButtons);
       if (sortierungsTyp != 1) {
         document.getElementById('frak').style.filter = "grayscale(0.85)";
         for (var i = 0; i < checkBoxButtons.length; i++) {
@@ -134,7 +133,7 @@ const spielButton = (callback) => {
   spielButtons[parseInt(spielTyp)].firstElementChild.checked = true;
 
   var spielButtononClick = function () {
-    console.log(this.parentElement.textContent.replace(/\s/g, ''));
+    // console.log(this.parentElement.textContent.replace(/\s/g, ''));
     switch (this.parentElement.textContent.replace(/\s/g, '')) {
       case "GTAV":
         spielTyp = 0;
@@ -163,7 +162,7 @@ const spielButton = (callback) => {
 
 const fraktionButton = (callback) => {
   var fraktionButtons = document.getElementsByClassName("container2");
-  console.log(fraktionen);
+  // console.log(fraktionen);
 
   for (var i = 0; i < fraktionButtons.length; i++) {
     fraktionButtons[i].firstElementChild.checked = false;
@@ -189,6 +188,7 @@ const fraktionButton = (callback) => {
     if (pos !== -1) {
       fraktionen.splice(pos, 1);
     } else {
+      if(fraktionen.length == 0) fraktionen = [];
       fraktionen.push(this.parentElement.textContent.replace(/\s/g, ''));
     }
     fraktionen = fraktionen.join(',');
