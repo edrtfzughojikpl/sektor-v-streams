@@ -2,7 +2,7 @@
   {
     "channel": "117Entertainment",
     "character": "Yoshiaki Sugawara",
-    "organisation": "CNT News"
+    "organisation": "CNTNews"
   },
   {
     "channel": "1nicesmaedchen",
@@ -52,7 +52,7 @@
   },
   {
     "channel": "Cyb3rl",
-    "character": "Sean ?",
+    "character": "Sean Grimes",
     "organisation": "Polizei"
   },
   {
@@ -99,7 +99,7 @@
   {
     "channel": "DonFreez",
     "character": "Franklin White",
-    "organisation": "Car Wash"
+    "organisation": "CarWash"
   },
   {
     "channel": "dudeSELECT",
@@ -119,7 +119,7 @@
   {
     "channel": "EhrenFate",
     "character": "Kornelius Kambach",
-    "organisation": "Sons of Light"
+    "organisation": "SonsOfLight"
   },
   {
     "channel": "ErnstPeter",
@@ -146,12 +146,12 @@
   {
     "channel": "Feraganor",
     "character": "Roderik Schulz",
-    "organisation": "Zivilist"
+    "organisation": "Polizei"
   },
   {
     "channel": "Fl3ischsalat",
     "character": "Vincent Van de Bergh",
-    "organisation": "Zivilist"
+    "organisation": "Mediziner"
   },
   {
     "channel": "Freebyx",
@@ -181,7 +181,7 @@
   {
     "channel": "Grueeeen",
     "character": "Leslie Cheng",
-    "organisation": "Sons of Light"
+    "organisation": "SonsOfLight"
   },
   {
     "channel": "HaGee",
@@ -262,7 +262,7 @@
       },
       {
         "char": "Lawrence O'Dare",
-        "orga": "Zivilist"
+        "orga": "Justiz"
       },
       {
         "char": "Valerie Marquez",
@@ -278,12 +278,12 @@
   {
     "channel": "kampf_assis",
     "character": "Pietro Macareno",
-    "organisation": "Zivilist"
+    "organisation": "SonsOfLight"
   },
   {
     "channel": "keisii10",
     "character": "Scott 'Mr. White' Norris",
-    "organisation": "Sons of Light"
+    "organisation": "SonsOfLight"
   },
   {
     "channel": "kenanebanane",
@@ -298,7 +298,7 @@
   {
     "channel": "King_Kasy",
     "character": "David Miller",
-    "organisation": "Miller's Craft Bar"
+    "organisation": "Miller'sCraftBar"
   },
   {
     "channel": "kingsm1le",
@@ -331,14 +331,9 @@
     "organisation": "Polizei"
   },
   {
-    "channel": "luke_stinson",
-    "character": "?",
-    "organisation": "Zivilist"
-  },
-  {
     "channel": "marked_by_lamb",
     "character": "Beezy Campbell",
-    "organisation": "Zivilist"
+    "organisation": "Southside"
   },
   {
     "channel": "masssel1991",
@@ -353,7 +348,7 @@
   {
     "channel": "minirakete",
     "character": "Ashanti West",
-    "organisation": "Raketes Kiosk"
+    "organisation": "RaketesKiosk"
   },
   {
     "channel": "missdeepblack",
@@ -373,7 +368,7 @@
   {
     "channel": "OberstRanzi",
     "character": "Alexandra Lynch",
-    "organisation": "Lost MC"
+    "organisation": "LostMC"
   },
   {
     "channel": "Ohozelot",
@@ -383,7 +378,7 @@
   {
     "channel": "OliwoodTV",
     "character": "Sigismundo Marquez",
-    "organisation": "North Light Church"
+    "organisation": "NorthLightChurch"
   },
   {
     "channel": "onion_reaper",
@@ -393,7 +388,7 @@
   {
     "channel": "p41n_",
     "character": "Bill von Crastenburg",
-    "organisation": "North Light Church"
+    "organisation": "NorthLightChurch"
   },
   {
     "channel": "P4NCAKS",
@@ -408,7 +403,7 @@
   {
     "channel": "PaterJudas",
     "character": "Harald Geier",
-    "organisation": "Sons of Light"
+    "organisation": "SonsOfLight"
   },
   {
     "channel": "Prinzenspiele",
@@ -428,7 +423,7 @@
   {
     "channel": "Raz3r_Gaming",
     "character": "Juan Pablo Guzmàn",
-    "organisation": "Zivilist"
+    "organisation": "KurantBar"
   },
   {
     "channel": "realdeus",
@@ -478,17 +473,17 @@
   {
     "channel": "sleepix94",
     "character": "Owen ?",
-    "organisation": "Los Santos Customs"
+    "organisation": "LosSantosCustoms"
   },
   {
     "channel": "SlodyTV",
     "character": "Valerie Kossicante Springs",
-    "organisation": "Zivilist"
+    "organisation": "Justiz"
   },
   {
     "channel": "sney7",
     "character": "Jay Klain ",
-    "organisation": "Zivilist"
+    "organisation": "Polizei"
   },
   {
     "channel": "Snowryo",
@@ -503,7 +498,7 @@
   {
     "channel": "Spliddorama",
     "character": "Arnold Walkowski",
-    "organisation": "Raketes Kiosk"
+    "organisation": "RaketesKiosk"
   },
   {
     "channel": "Staiy",
@@ -528,7 +523,7 @@
   {
     "channel": "TheGermanSausage",
     "character": "Jupp Schmitz",
-    "organisation": "Zivilist"
+    "organisation": "Polizei"
   },
   {
     "channel": "Tomovidner",
@@ -548,12 +543,12 @@
   {
     "channel": "Torro",
     "character": "Bob Manboo",
-    "organisation": "CNT News"
+    "organisation": "CNTNews"
   },
   {
     "channel": "tuned27",
-    "character": "Logan ?",
-    "organisation": "Sektor Cars"
+    "character": "Logan Harbor",
+    "organisation": "SektorCars"
   },
   {
     "channel": "unholt",
@@ -583,7 +578,13 @@
   {
     "channel": "whoiswolfmedia",
     "character": "Helmut Rakete",
-    "organisation": "Raketes Kiosk"
+    "organisation": "RaketesKiosk",
+    "otherChars": [
+      {
+        "char": "'Cooper' ?",
+        "orga": "Zivilist"
+      }
+    ]
   },
   {
     "channel": "worek",
@@ -604,6 +605,81 @@
   {
     "channel": "zKazee",
     "character": "Seek Wynn",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "schnattilein",
+    "character": "Amy Yamada",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "MikeLowrey83",
+    "character": "Mike Lenz",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "shiro_893",
+    "character": "Yamamoto Oda",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "MissYummyCandy",
+    "character": "Jelena Dubrovnik",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "passeeeh",
+    "character": "Jonas Turner",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "la_ladia",
+    "character": "Mia Soprano",
+    "organisation": "Liveinvader"
+  },
+  {
+    "channel": "Xhanrushi",
+    "character": "Gertlinda Rush",
+    "organisation": "Taxi"
+  },
+  {
+    "channel": "MaiJuni",
+    "character": "Adriana ?",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "death_kenny13",
+    "character": "Julian Kenny Moore",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "hoppii",
+    "character": "Jürgen Janssen",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "footballflo",
+    "character": "Fiete Petersen",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "deedlivetv",
+    "character": "Carlos Alvarez",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "vaikzen",
+    "character": "Wesley Avens",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "luke_stinson",
+    "character": "Slavik Iwanow",
+    "organisation": "Zivilist"
+  },
+  {
+    "channel": "Boniak",
+    "character": "?",
     "organisation": "Zivilist"
   }
 ]
