@@ -109,7 +109,7 @@
   {
     "channel": "DunkelBluePeer",
     "character": "?",
-    "organisation": "Zivilist"
+    "organisation": "Polizei"
   },
   {
     "channel": "duplaix",
@@ -478,7 +478,7 @@
   {
     "channel": "SlodyTV",
     "character": "Valerie Kossicante Springs",
-    "organisation": "Justiz"
+    "organisation": "Anwalt"
   },
   {
     "channel": "sney7",
@@ -625,12 +625,12 @@
   {
     "channel": "MissYummyCandy",
     "character": "Jelena Dubrovnik",
-    "organisation": "Polizei"
+    "organisation": "Justiz"
   },
   {
     "channel": "passeeeh",
     "character": "Jonas Turner",
-    "organisation": "Polizei"
+    "organisation": "SecuroServ"
   },
   {
     "channel": "la_ladia",
@@ -681,5 +681,35 @@
     "channel": "Boniak",
     "character": "?",
     "organisation": "Zivilist"
+  },
+  {
+    "channel": "AVASH",
+    "character": "Philipp Watson",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Kryo1988",
+    "character": "Sebastian Brown",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "Anderros",
+    "character": "Andrei Stroia",
+    "organisation": "Polizei"
+  },
+  {
+    "channel": "k4mpfh4mst3r",
+    "character": "Asher Paton",
+    "organisation": "Justiz"
+  },
+  {
+    "channel": "GeneralDoSa",
+    "character": "Jack Lion",
+    "organisation": "SecuroServ"
+  },
+  {
+    "channel": "Modulti98",
+    "character": "Helmut Meyer",
+    "organisation": "HelmutsRental"
   }
 ]
