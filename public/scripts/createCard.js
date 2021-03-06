@@ -5,6 +5,7 @@ const create = ({
   user,
   stream,
   charInfo,
+  multiChar,
   notGTA
 }) => {
   //? create copy of example Element
@@ -37,21 +38,21 @@ const create = ({
 
   let char = document.createElement("td");
   let orga = document.createElement("td");
-  char.textContent = charInfo.character;
+  char.textContent = charInfo.charName;
   charRow.append(char);
-  orga.textContent = charInfo.organisation;
+  orga.textContent = charInfo.charOrga;
   charRow.append(orga);
 
   //? add info is multischar player
-  if (charInfo.otherChars) {
+  if (multiChar.length > 0) {
     let icon = element.querySelector(".icon");
     icon.style.display = "block";
-    charInfo.otherChars.forEach((item) => {
+    multiChar.forEach((item) => {
       let tr = document.createElement("tr");
       let charTo = document.createElement("td");
       let orgaTo = document.createElement("td");
-      charTo.textContent = item.char;
-      orgaTo.textContent = item.orga;
+      charTo.textContent = item.charName;
+      orgaTo.textContent = item.charOrga;
       tr.append(charTo);
       tr.append(orgaTo);
       otherCharsRow.append(tr);

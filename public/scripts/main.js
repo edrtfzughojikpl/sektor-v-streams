@@ -9,10 +9,10 @@ ______/\\\\\\\\\\\_____________________________________________________/\\\\\\\_
        _\//\\\\\\\\\_______\///\\\\\/______________________________________\///\\\\\\\/____/\\\/\///\\\__\///\\\\\\\\\/___\//\\\\\\\\/\\__\///\\\\\\\\\/______\/\\\______ 
         __\/////////__________\/////__________________________________________\///////_____\///____\///_____\/////////______\////////\//_____\/////////________\///_______
 */
-let msg = 
-"     _    \n"+"    | |  ___  \n"+" _  | | / _ \\ \n"+"| |_| || (_) | \n"+" \\___/  \\___/\n";
-                                       
-console.warn("Made by:\n"+msg)
+let msg =
+  "     _    \n" + "    | |  ___  \n" + " _  | | / _ \\ \n" + "| |_| || (_) | \n" + " \\___/  \\___/\n";
+
+console.warn("Made by:\n" + msg)
 
 const rootElement = document.getElementById("root");
 const socket = io();
@@ -92,7 +92,7 @@ socket.on('data', ({
   channels,
   lastUpdated
 }) => {
-  // console.log(channels, lastUpdated);
+  console.log(channels, lastUpdated);
 
   _channels = channels;
 
@@ -109,7 +109,7 @@ const updateList = () => {
   let __channels = _channels;
   switch (parseInt(sortierungsTyp)) {
     case 1:
-      __channels = __channels.sort((a, b) => a.charInfo.organisation.localeCompare(b.charInfo.organisation));
+      __channels = __channels.sort((a, b) => a.charInfo.charOrga.localeCompare(b.charInfo.charOrga));
       __channels = remove(__channels, "frak");
       break;
     case 2:
@@ -165,7 +165,19 @@ const remove = (___channels, type) => {
     } else if (type == "on") {
       if (!channel.stream) __channels.push(channel);
     } else if (type == "frak") {
-      if (fraktionen.includes(channel.charInfo.organisation)) __channels.push(channel);
+      if (fraktionen.includes(channel.charInfo.charOrga)) {
+        __channels.push(channel);
+      } else {
+        let isIn = false;
+        channel.multiChar.forEach(char => {
+          if (!isIn) {
+            if(fraktionen.includes(char.charOrga)){
+              __channels.push(channel);
+              isIn = true;
+            };
+          }
+        })
+      }
     }
   });
   return __channels;
