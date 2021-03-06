@@ -31,7 +31,8 @@ const create = ({
   linkAHref.dataset.link = `www.twitch.tv/${user.display_name}`;
   linkAHref.href = `https://${linkAHref.dataset.link}`;
   linkAHref.target = "_blank";
-
+  linkAHref.classList.add("tooltip2");
+  
   // charnameDiv.dataset.title = charInfo.character;
   // orgaDiv.dataset.title = charInfo.organisation;
   // streamTitleP.textContent = stream.channel.status;
@@ -67,6 +68,12 @@ const create = ({
   if (notGTA)
     element.style.filter = "grayscale(0.75)";
 
+  if(stream) {
+    let span = document.createElement("span");
+    span.style.background = `#772ce8 url(${stream.preview.medium}) repeat-x 0 0`;
+    linkAHref.append(span);
+  }
+  
   rootElement.appendChild(element);
 }
 

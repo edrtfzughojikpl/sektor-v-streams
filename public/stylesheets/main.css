@@ -224,6 +224,29 @@ th {
   z-index: 400;
 }
 
+.tooltip2 {
+  outline: none;
+}
+
+.tooltip2:hover {
+  text-decoration: none;
+}
+
+.tooltip2 span {
+  z-index: 10;
+  display: none;
+  width: 320px;
+  height: 180px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.tooltip2:hover span {
+  display: inline;
+  position: absolute;
+  border: 2px solid #FFF;
+  color: #EEE;
+}
 
 
 .dropdown-content {
