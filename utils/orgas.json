@@ -1,125 +1,130 @@
 {
-  "Polizei": [{
+  "Unicorn": [{
+    "charcter": "Sanchez Rodriguez Gonzales",
+    "channel": "Jay_Corner"
+  }],
+  "Polizei": [
+    {
       "character": "Amy Yamada",
-      "channel": "schnattilein"
+      "channel": "\t\tschnattilein"
     },
     {
       "character": "Billy Brown",
-      "channel": "line___"
+      "channel": "\t\tline___"
     },
     {
       "character": "Boban Romano",
-      "channel": "Jay_Corner"
+      "channel": "\t\tJay_Corner"
     },
     {
       "character": "Dwayne Hayford",
-      "channel": "R4pst3r"
+      "channel": "\t\tR4pst3r"
     },
     {
       "character": "Jack Stahl",
-      "channel": "MasterZwerg1"
+      "channel": "\t\tMasterZwerg1"
     },
     {
       "character": "James Riker",
-      "channel": "Zintelinho"
+      "channel": "\t\tZintelinho"
     },
     {
       "character": "Kofi O'Hara",
-      "channel": "Hugsl4y"
+      "channel": "\t\tHugsl4y"
     },
     {
       "character": "Kurimo",
-      "channel": "valkjre"
+      "channel": "\t\tvalkjre"
     },
     {
       "character": "Luis Aiden Price",
-      "channel": "issprice"
+      "channel": "\t\tissprice"
     },
     {
       "character": "Luka Kovacic",
-      "channel": "Nexus92"
+      "channel": "\t\tNexus92"
     },
     {
       "character": "Matteo de Luca",
-      "channel": "duplaix"
+      "channel": "\t\tduplaix"
     },
     {
       "character": "Maurice Eggers",
-      "channel": "Prinzenspiele"
+      "channel": "\t\tPrinzenspiele"
     },
     {
       "character": "Mike Lenz",
-      "channel": "MikeLowrey83"
+      "channel": "\t\tMikeLowrey83"
     },
     {
       "character": "Nick O´Brien",
-      "channel": "Ryskal"
+      "channel": "\t\tRyskal"
     },
     {
       "character": "Philipp Watson",
-      "channel": "AVASH"
+      "channel": "\t\tAVASH"
     },
     {
       "character": "Sam De Ville",
-      "channel": "Neonox"
+      "channel": "\t\tNeonox"
     },
     {
       "character": "Sebastian Brown",
-      "channel": "Kryo1988"
+      "channel": "\t\tKryo1988"
     },
     {
       "character": "Sean Grimes",
-      "channel": "Cyb3rl"
+      "channel": "\t\tCyb3rl"
     },
     {
       "character": "Sophia Smith",
-      "channel": "sophiasweetheart"
+      "channel": "\t\tsophiasweetheart"
     },
     {
       "character": "Tatanga Wokadeh",
-      "channel": "HaGee"
+      "channel": "\t\tHaGee"
     },
     {
       "character": "Tom Vidner",
-      "channel": "Tomovidner"
+      "channel": "\t\tTomovidner"
     },
     {
       "character": "Tristan Kane",
-      "channel": "doenilein"
+      "channel": "\t\tdoenilein"
     },
     {
       "character": "Vladimir Vladimirovich Powlow",
-      "channel": "Dekarldent"
+      "channel": "\t\tDekarldent"
     },
     {
       "character": "Yamamoto Oda",
-      "channel": "shiro_893"
+      "channel": "\t\tshiro_893"
     },
     {
       "character": "Thomas Harrison",
-      "channel": "Sarooman"
+      "channel": "\t\tSarooman"
     },
     {
       "character": "Roderik Schulz",
-      "channel": "Feraganor"
+      "channel": "\t\tFeraganor"
     },
     {
       "character": "Josef Jupp Schmitz",
-      "channel": "TheGermanSausage"
+      "channel": "\t\tTheGermanSausage"
     },
     {
       "character": "Jay Klain",
-      "channel": "sney7"
+      "channel": " \t\tsney7"
     },
     {
       "character": "Andrei Stroia",
-      "channel": "Anderros"
+      "channel": "\t\tAnderros"
     },
     {
-      "character": "?",
-      "channel": "DunkelBluePeer"
+      "character": "Maik Müller",
+      "channel": "\t\tDunkelBluePeer"
     }
-  ],
+   ],
   "Mediziner": [{
       "character": "Aurora Quinn",
       "channel": "Visenaa"
@@ -152,10 +157,6 @@
     {
       "character": "Lawrence O'Dare",
       "channel": "Jay_Corner"
-    },
-    {
-      "character": "Montgomery Sunderland",
-      "channel": "worek"
     }
   ],
   "Anwalt": [{
@@ -263,6 +264,10 @@
     {
       "character": "Yoshiaki Sugawara",
       "channel": "117Entertainment"
+    },
+    {
+      "character": "Genevieve Grey",
+      "channel": "kiki_chikila"
     }
   ],
   "DNTVN": [{
@@ -299,6 +304,14 @@
     "character": "Wadim Zorka",
     "channel": "R3KK0N"
   }],
+  "InkInc-Tattoo-Studio": [{
+    "character": "Yuki Nakamura",
+    "channel": "1nicesmaedchen"
+  }],
+  "Crucial-Fix": [{
+    "character": "Thomas Hendrik",
+    "channel": "AzeRTV"
+  }],
   "North-Light-Church": [{
       "character": "Bill von Crastenburg",
       "channel": "p41n_"
@@ -308,10 +321,6 @@
       "channel": "OliwoodTV"
     }
   ],
-  "Unicorn": [{
-    "charcter": "'Nacho'",
-    "channel": "JamesDE"
-  }],
   "Yakuza":[
     {
       "character": "Han Nakamura",
@@ -384,6 +393,17 @@
     {
       "character": "Juan Pablo Guzmàn",
       "channel": "Raz3r_Gaming"
+    }
+   ],
+   "Kartel":
+   [
+    {
+      "character": "\"Nacho\"",
+      "channel": "JamesDE"
+    },
+    {
+      "character": "Slavik Iwanow",
+      "channel": "luke_stinson"
     }
    ],
    "Zivilist":[
@@ -600,7 +620,7 @@
       "channel": "1nicesmaedchen"
     },
     {
-      "character": "?",
+      "character": "Aykut Shakur",
       "channel": " vaykutkrkmz_"
     },
     {
@@ -610,6 +630,10 @@
     {
       "character": "?",
       "channel": " w0llex_"
+    },
+    {
+      "character": "Lenny Feyer",
+      "channel": " zim_live"
     }
    ],
    "Einreiseamt":[
@@ -632,6 +656,10 @@
     {
       "character": "Willy",
       "channel": "HaGee"
+    },
+    {
+      "character": "Mandy Hart",
+      "channel": "whoiswolfmedia"
     }
    ]
 }
