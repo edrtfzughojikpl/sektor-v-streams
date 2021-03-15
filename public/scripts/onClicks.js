@@ -178,7 +178,7 @@ const fraktionButton = (callback) => {
           break;
         }
       }
-      found.firstElementChild.checked = true;
+      found?.firstElementChild.checked = true;
     })
   }
 

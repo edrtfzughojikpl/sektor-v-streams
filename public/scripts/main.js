@@ -27,45 +27,7 @@ import {
   fraktionButton
 } from "./onClicks.js";
 
-settingsButton();
-sortierngsButton(() => {
-  setCookie("sortierungsTyp", sortierungsTyp, 365 * 5);
-  updateList();
-  console.log("sortierungsTyp: " + sortierungsTyp);
-  var checkBoxButtons = document.getElementsByClassName("container2");
-  if (sortierungsTyp != 1) {
-    document.getElementById('frak').style.filter = "grayscale(0.85)";
-    for (var i = 0; i < checkBoxButtons.length; i++) {
-      checkBoxButtons[i].firstElementChild.disabled = true;
-    }
-  } else {
-    for (var i = 0; i < checkBoxButtons.length; i++) {
-      checkBoxButtons[i].firstElementChild.disabled = false;
-    }
-    document.getElementById('frak').style.filter = "";
-  }
-});
-onlineofflineButton(() => {
-  setCookie("einblendungsTyp", einblendungsTyp, 365 * 5);
-  updateList();
-  // console.log("einblendungsTyp: " + einblendungsTyp);
-});
-spielButton(() => {
-  setCookie("spielTyp", spielTyp, 365 * 5);
-  updateList();
-  // console.log("spielTyp: " + spielTyp);
-});
-fraktionButton(() => {
-  setCookie("fraktionen", fraktionen, 365 * 5);
-  updateList();
-  // console.log("fraktionen: " + fraktionen);
-});
-
-
 const timeElement = document.getElementById("time");
-
-
-
 
 setInterval(() => {
   updateTimer(Seconds);
@@ -183,6 +145,39 @@ const remove = (___channels, type) => {
   return __channels;
 }
 
+settingsButton();
+sortierngsButton(() => {
+  setCookie("sortierungsTyp", sortierungsTyp, 365 * 5);
+  updateList();
+  console.log("sortierungsTyp: " + sortierungsTyp);
+  var checkBoxButtons = document.getElementsByClassName("container2");
+  if (sortierungsTyp != 1) {
+    document.getElementById('frak').style.filter = "grayscale(0.85)";
+    for (var i = 0; i < checkBoxButtons.length; i++) {
+      checkBoxButtons[i].firstElementChild.disabled = true;
+    }
+  } else {
+    for (var i = 0; i < checkBoxButtons.length; i++) {
+      checkBoxButtons[i].firstElementChild.disabled = false;
+    }
+    document.getElementById('frak').style.filter = "";
+  }
+});
+onlineofflineButton(() => {
+  setCookie("einblendungsTyp", einblendungsTyp, 365 * 5);
+  updateList();
+  // console.log("einblendungsTyp: " + einblendungsTyp);
+});
+spielButton(() => {
+  setCookie("spielTyp", spielTyp, 365 * 5);
+  updateList();
+  // console.log("spielTyp: " + spielTyp);
+});
+fraktionButton(() => {
+  setCookie("fraktionen", fraktionen, 365 * 5);
+  updateList();
+  // console.log("fraktionen: " + fraktionen);
+});
 
 // { DISABLED! (only plays on HS)
 //   "channel": "ShoXx__",
