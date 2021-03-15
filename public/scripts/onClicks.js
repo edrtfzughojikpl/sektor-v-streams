@@ -178,17 +178,18 @@ const fraktionButton = (callback) => {
           break;
         }
       }
-      found.firstElementChild.checked = true;
+      if (found)
+        found.firstElementChild.checked = true;
     })
   }
 
   var fraktionButtonsonClick = function () {
-    if(fraktionen.length > 0) fraktionen = fraktionen.split(',');
+    if (fraktionen.length > 0) fraktionen = fraktionen.split(',');
     let pos = fraktionen.indexOf(this.parentElement.textContent.replace(/\s/g, ''));
     if (pos !== -1) {
       fraktionen.splice(pos, 1);
     } else {
-      if(fraktionen.length == 0) fraktionen = [];
+      if (fraktionen.length == 0) fraktionen = [];
       fraktionen.push(this.parentElement.textContent.replace(/\s/g, ''));
     }
     fraktionen = fraktionen.join(',');
