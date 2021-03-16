@@ -64,10 +64,14 @@ const getInfoForUser = async (orgaIndex, channelIndex) => {
     res = JSON.parse(res);
     if (res.users[0]) {
       let info = await channelStatusByUser(res.users[0]);
-      sendInfoToUsers({info, channel, organisation});
+      sendInfoToUsers({
+        info,
+        channel,
+        organisation
+      });
     }
   } catch (error) {
-    console.log("Error: "+ error, channel)
+    console.log("Error: " + error, channel)
   } finally {
     getInfoForUser(orgaIndex, ++channelIndex);
   }
@@ -89,7 +93,11 @@ const getInfoForUser = async (orgaIndex, channelIndex) => {
 let UpdatedChannels = [];
 let lastUpdated = new Date();
 
-const sendInfoToUsers = ({info, channel, organisation}) => {
+const sendInfoToUsers = ({
+  info,
+  channel,
+  organisation
+}) => {
   let stream = JSON.parse(info.body);
   return new Promise((resolve, reject) => {
     let pos = UpdatedChannels.findIndex(everythingAboutStream => everythingAboutStream.charInfo.channelName.toLowerCase() == info.user.name);
@@ -107,9 +115,9 @@ const sendInfoToUsers = ({info, channel, organisation}) => {
       });
     } else {
       UpdatedChannels[pos].stream = stream.stream;
-      if(channel.character == UpdatedChannels[pos].charInfo.charName) return;
+      if (channel.character == UpdatedChannels[pos].charInfo.charName) return;
       const posi = UpdatedChannels[pos].multiChar.findIndex(everythingAboutStream => everythingAboutStream.charName == channel.character);
-      if(posi != -1) return
+      if (posi != -1) return
       UpdatedChannels[pos].multiChar.push({
         charName: channel.character,
         charOrga: organisation
@@ -143,3 +151,68 @@ module.exports = (IO) => {
   });
   getInfoForUser(0, 0);
 }
+
+const MongoClient = require('mongodb').MongoClient;
+
+// Connection URL
+const url = 'mongodb+srv://DBAdmin:Wd0unx7FhM5ioTXr@streams.tjuxj.mongodb.net/streams?retryWrites=true&w=majority';
+
+// Database Name
+const dbName = 'streams';
+const client = new MongoClient(url, {
+  useUnifiedTopology: true
+}, {
+  useNewUrlParser: true
+}, {
+  connectTimeoutMS: 30000
+}, {
+  keepAlive: 1
+});
+// Use connect method to connect to the server
+client.connect(function (err) {
+  console.log('Connected successfully to server');
+
+  const db = client.db(dbName);
+
+  setInterval(() => {
+    insertDocuments(db);
+  }, 1000 * 60 * 30); // every 30 minutes 
+});
+
+client.on('error', (err) => {
+  console.log(err);
+  client.close();
+});
+
+const insertDocuments = function (db) {
+  // Get the documents collection
+  const collection = db.collection('streams');
+
+  // collection.find()
+  //   .toArray()
+  //   .then(items => {
+  //     console.log(`Successfully found ${items.length} documents.`)
+  //     items.forEach(console.log)
+  //     return items
+  //   })
+  //   .catch(err => console.error(`Failed to find documents: ${err}`))
+
+  // Insert some documents
+  const newItem = {
+    "streams": UpdatedChannels,
+    "date": Date.now()
+  };
+  collection.insertOne(newItem)
+    .then(result => {
+      var date = new Date(Date.now());
+      // Hours part from the timestamp
+      var hours = date.getHours();
+      // Minutes part from the timestamp
+      var minutes = "0" + date.getMinutes();
+      // Seconds part from the timestamp
+      var seconds = "0" + date.getSeconds();
+      var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+      console.log(`Successfully inserted item with length: ${UpdatedChannels.length} at ${formattedTime}`)
+    })
+    .catch(err => console.error(`Failed to insert item: ${err}`))
+};
