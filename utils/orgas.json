@@ -157,16 +157,8 @@
    "channel": "Sarooman"
  },
  {
-   "character": "Roderik Schulz",
-   "channel": "Feraganor"
- },
- {
    "character": "Josef Jupp Schmitz",
    "channel": "TheGermanSausage"
- },
- {
-   "character": "Jay Klain",
-   "channel": "sney7"
  },
  {
    "character": "Andrei Stroia",
@@ -227,10 +219,6 @@
     {
       "character": "Derek Durand",
       "channel": "S3riuxTV"
-    },
-    {
-      "character": "Harry Schmidt",
-      "channel": "Hennerlive"
     },
     {
       "character": "Jonas Turner",
@@ -345,6 +333,26 @@
   "Crucial-Fix": [{
     "character": "Thomas Hendrik",
     "channel": "AzeRTV"
+  },
+  {
+    "character": "Fabian Ferber",
+    "channel": "Fabi4Gaming"
+  }],
+  "LS-Güterhandel": [{
+    "character": "Roderik Schulz",
+    "channel": "Feraganor"
+  }],
+  "Hotshot-Gun&Fun": [{
+    "character": "Jay Klain",
+    "channel": "sney7"
+  }],
+  "Yellow-Jack-Inn": [{
+    "character": "Harry Schmidt",
+    "channel": "Hennerlive"
+  }],
+  "ACLS": [{
+    "character": "Aykut Shakur",
+    "channel": "vaykutkrkmz_"
   }],
   "North-Light-Church": [{
       "character": "Bill von Crastenburg",
@@ -424,6 +432,10 @@
     {
       "character": "Jürgen Janssen",
       "channel": "hoppii"
+    },
+    {
+      "character": "Tonny Tong",
+      "channel": "Tonny__Tong"
     }
    ],
    "Kurant-Bar":
@@ -642,8 +654,8 @@
       "channel": "vaikzen"
     },
     {
-      "character": "Aykut Shakur",
-      "channel": "vaykutkrkmz_"
+      "character": "Harald Meyer",
+      "channel": "Staiy"
     },
     {
       "character": "?",
@@ -678,6 +690,16 @@
     {
       "character": "Mandy Hart",
       "channel": "whoiswolfmedia"
+    }
+    ,
+    {
+      "character": "Nupsi",
+      "channel": "HughWinters"
+    }
+    ,
+    {
+      "character": "Lydia Lovegood",
+      "channel": "hardcora90"
     }
    ]
 }
