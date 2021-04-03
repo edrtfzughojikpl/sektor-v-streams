@@ -35,19 +35,6 @@
     "character": "Cherry Carter",
     "channel": "hardcora90"
   }],
-  "IAA": [{
-      "character": "Vladimir Vladimirovich Powlow",
-      "channel": "Dekarldent"
-    },
-    {
-      "character": "Billy Brown",
-      "channel": "line___"
-    },
-    {
-      "character": "Samuel Hardear",
-      "channel": "tamaaa"
-    }
-  ],
   "US-Marshal": [{
       "character": "Jack Stahl",
       "channel": "MasterZwerg1"
@@ -59,10 +46,17 @@
     {
       "character": "Mike Lenz",
       "channel": "MikeLowrey83"
+    },
+    {
+      "character": "Paddy von Hohenhausen",
+      "channel": "MeckPommLetsPlay"
+    },
+    {
+      "character": "Phellan Kell",
+      "channel": "Phellan_Kell"
     }
   ],
-  "Polizei": [
-    {
+  "Polizei": [{
       "character": "Adriana Gabriela",
       "channel": "MaiJuni"
     },
@@ -71,12 +65,12 @@
       "channel": "schnattilein"
     },
     {
-      "character": "Aurora Quinn",
-      "channel": "Visenaa"
+      "character": "Andrei Stroia",
+      "channel": "Anderros"
     },
     {
-      "character": "Aykut Shakur",
-      "channel": "vaykutkrkmz_"
+      "character": "Aurora Quinn",
+      "channel": "Visenaa"
     },
     {
       "character": "Benjamin Storch",
@@ -87,12 +81,24 @@
       "channel": "Jay_Corner"
     },
     {
+      "character": "Danny Zücker",
+      "channel": "eiskalterjuri"
+    },
+    {
       "character": "Dwayne Hayford",
       "channel": "R4pst3r"
     },
     {
       "character": "Gabriel Santo",
       "channel": "aypi_xt"
+    },
+    {
+      "character": "Hayato Kurimo",
+      "channel": "valkjre"
+    },
+    {
+      "character": "Jamal Cooper",
+      "channel": "kingsm1le"
     },
     {
       "character": "James Riker",
@@ -103,24 +109,20 @@
       "channel": "darkdanjo"
     },
     {
-      "character": "Julien York",
-      "channel": "madnessmersa"
+      "character": "Jörg Bauers",
+      "channel": "PrinzDaniel89"
     },
     {
       "character": "Kofi O'Hara",
       "channel": "Hugsl4y"
     },
     {
-      "character": "Kurimo",
-      "channel": "valkjre"
-    },
-    {
       "character": "Luis Aiden Price",
       "channel": "issprice"
     },
     {
-      "character": "Luka Kovacic",
-      "channel": "Nexus92"
+      "character": "Maik Müller",
+      "channel": "DunkelBluePeer"
     },
     {
       "character": "Maurice Eggers",
@@ -131,6 +133,10 @@
       "channel": "Ryskal"
     },
     {
+      "character": "Peter Scheinfeld",
+      "channel": "Lichtbringer91"
+    },
+    {
       "character": "Philipp Watson",
       "channel": "AVASH"
     },
@@ -139,12 +145,12 @@
       "channel": "Neonox"
     },
     {
-      "character": "Sebastian Brown",
-      "channel": "Kryo1988"
-    },
-    {
       "character": "Sean Grimes",
       "channel": "Cyb3rl"
+    },
+    {
+      "character": "Sebastian Brown",
+      "channel": "Kryo1988"
     },
     {
       "character": "Sophia Smith",
@@ -165,39 +171,31 @@
     {
       "character": "Yamamoto Oda",
       "channel": "shiro_893"
-    },
-    {
-      "character": "Josef Jupp Schmitz",
-      "channel": "TheGermanSausage"
-    },
-    {
-      "character": "Andrei Stroia",
-      "channel": "Anderros"
-    },
-    {
-      "character": "Maik Müller",
-      "channel": "DunkelBluePeer"
     }
-   ],
+  ],
   "Mediziner": [{
       "character": "Fynnja Waskana",
       "channel": "Freebyx"
+    },
+    {
+      "character": "Jane Glitter",
+      "channel": "JACKYECKiiii"
     },
     {
       "character": "John Delgardo",
       "channel": "TheBlueEyeGaming"
     },
     {
+      "character": "Lily Warren",
+      "channel": "ladypannini"
+    },
+    {
       "character": "Steffi ?",
-      "channel": "daniespielt"
+      "channel": "daniespielt "
     },
     {
       "character": "Vincent Van de Bergh",
       "channel": "Fl3ischsalat"
-    },
-    {
-      "character": "Lily Warren",
-      "channel": "ladypannini"
     }
   ],
   "Justiz": [{
@@ -209,12 +207,16 @@
       "channel": "MissYummyCandy"
     },
     {
+      "character": "Matteo de Luca",
+      "channel": "duplaix"
+    },
+    {
       "character": "Lawrence O'Dare",
       "channel": "Jay_Corner"
     },
     {
-      "character": "Matteo de Luca",
-      "channel": "duplaix"
+      "character": "Luka Kovacic",
+      "channel": "Nexus92"
     }
   ],
   "Anwalt": [{
@@ -231,20 +233,12 @@
       "channel": "Kryptophox"
     },
     {
-      "character": "Danny Zücker",
-      "channel": "eiskalterjuri"
-    },
-    {
       "character": "Derek Durand",
       "channel": "S3riuxTV"
     },
     {
       "character": "Jonas Turner",
       "channel": "passeeeh"
-    },
-    {
-      "character": "Kevin Lucky Junior",
-      "channel": "laacki1"
     },
     {
       "character": "Michael Lange",
@@ -266,10 +260,6 @@
   "Los-Santos-Customs": [{
       "character": "Owen ?",
       "channel": "sleepix94"
-    },
-    {
-      "character": "Jamal Cooper",
-      "channel": "kingsm1le"
     }
   ],
   "Raketes-Kiosk": [{
@@ -320,10 +310,6 @@
       "channel": "masssel1991"
     },
     {
-      "character": "Dominik Hotch",
-      "channel": "BlueHawk_Down"
-    },
-    {
       "character": "Gertlinda Rush",
       "channel": "Xhanrushi"
     }
@@ -339,6 +325,10 @@
   "Gate": [{
     "character": "Kalle Schimanski",
     "channel": "Tony__C"
+  }],
+  "Tattoo-Eastside": [{
+    "character": "Lio White",
+    "channel": "realdeus"
   }],
   "Wolf-Gebracutswagen": [{
     "character": "Wadim Zorka",
@@ -372,12 +362,32 @@
     "character": "Harry Schmidt",
     "channel": "Hennerlive"
   }],
-  "ACLS": [{
-    "character": "Aykut Shakur",
-    "channel": "vaykutkrkmz_"
+  "The-Diamond": [{
+    "character": "Francesco Di Nardo",
+    "channel": "floktor10"
   }],
-  "North-Light-Church": [
+  "Happy-Farm": [{
+      "character": "Benjamin Nickel",
+      "channel": "d3rleo"
+    },
     {
+      "character": "Thijs van der Kaas",
+      "channel": "unholt"
+    }
+  ],
+  "ACLS": [{
+    "character": "Zora Craft",
+    "channel": "JeyCraft"
+  }],
+  "Benny's": [{
+    "character": "Dominik Hotch",
+    "channel": "BlueHawk_Down"
+  }],
+  "Oldtimer-LS": [{
+    "character": "Kevin Lucky Junior",
+    "channel": "laacki1"
+  }],
+  "North-Light-Church": [{
       "character": "Sigismundo Marquez",
       "channel": "OliwoodTV"
     },
@@ -408,13 +418,14 @@
     }
   ],
   "LostMC": [{
-    "character": "Alexandra Lynch",
-    "channel": "OberstRanzi"
-  },
-  {
-    "character": "Jack Lion",
-    "channel": "GeneralDoSa"
-  }],
+      "character": "Alexandra Lynch",
+      "channel": "OberstRanzi"
+    },
+    {
+      "character": "Jack Lion",
+      "channel": "GeneralDoSa"
+    }
+  ],
   "Miller's-Craft-Bar": [{
     "character": "David Miller",
     "channel": "King_Kasy"
@@ -430,31 +441,39 @@
     {
       "character": "Gigi Stone",
       "channel": "Gnobsalg"
+    },
+    {
+      "character": "Noah Snow",
+      "channel": "DerEchteSnoow"
     }
   ],
-  "Kirche-des-Lichtes": [{
+  "Kirche-des-Lichts": [{
       "character": "Harald Geier",
       "channel": "PaterJudas"
+    },
+    {
+      "character": "Jürgen Janssen",
+      "channel": "hoppii"
     },
     {
       "character": "Kornelius Kambach",
       "channel": "EhrenFate"
     },
     {
+      "character": "Laroy Jackson",
+      "channel": "SiX3ER"
+    },
+    {
       "character": "Leslie Cheng",
       "channel": "Grueeeen"
     },
     {
+      "character": "Pietro Macareno",
+      "channel": "KELRE0N"
+    },
+    {
       "character": "Scott \"Mr. White\" Norris",
       "channel": "keisii10"
-    },
-    {
-      "character": "Pietro Macareno",
-      "channel": "kelre0n"
-    },
-    {
-      "character": "Jürgen Janssen",
-      "channel": "hoppii"
     },
     {
       "character": "Tonny Tong",
@@ -466,26 +485,45 @@
     "channel": "Raz3r_Gaming"
   }],
   "Kartel": [{
-      "character": "\"Nacho\"",
-      "channel": "JamesDE"
+    "character": "\"Nacho\"",
+    "channel": "JamesDE"
+  }],
+  "Westside": [{
+      "character": "Jay Pharrell",
+      "channel": "SHOT_LIIVE"
+    },
+    {
+      "character": "Logan Hatherway",
+      "channel": "pnation"
     }
   ],
-  "Zivilist": [
-    {
+  "Zivilist": [{
       "character": "Cooper",
       "channel": "whoiswolfmedia"
+    },
+    {
+      "character": "Aiden Bane",
+      "channel": "Quokkarion"
     },
     {
       "character": "Ali Diaz",
       "channel": "Vaspid_"
     },
     {
+      "character": "Antonio Biggs",
+      "channel": "dr4gex"
+    },
+    {
       "character": "Antonio Guantana",
       "channel": "dilipp"
     },
     {
-      "character": "Benjamin Nickel",
-      "channel": "d3rleo"
+      "character": "Aykut Shakur",
+      "channel": "vaykutkrkmz_"
+    },
+    {
+      "character": "Bernd Holmes",
+      "channel": "Swomsen"
     },
     {
       "character": "Brian Glitter",
@@ -500,8 +538,16 @@
       "channel": "ShoXx__"
     },
     {
+      "character": "Demyan Taylor",
+      "channel": "Lengano"
+    },
+    {
       "character": "Donny Cheng",
       "channel": "Cocobane"
+    },
+    {
+      "character": "Donovan Lawrence",
+      "channel": "VollZeitNoob96"
     },
     {
       "character": "Eddi Kingston",
@@ -540,6 +586,10 @@
       "channel": "The_Bavarian_Barbarian"
     },
     {
+      "character": "Gerhard Glitter",
+      "channel": "9an112"
+    },
+    {
       "character": "Harald Meyer",
       "channel": "Staiy"
     },
@@ -556,24 +606,16 @@
       "channel": "HerrnOli"
     },
     {
-      "character": "Jane Glitter",
-      "channel": "JACKYECKiiii"
-    },
-    {
-      "character": "Jay Pharrell",
-      "channel": "SHOT_LIIVE"
-    },
-    {
       "character": "Jerry Moore II",
       "channel": "p41n_"
     },
     {
-      "character": "Joel Kroll",
-      "channel": "BukkitFAQ"
+      "character": "Joe \"Little Joe\" Di Martino",
+      "channel": "line___"
     },
     {
-      "character": "Jörg Bauers",
-      "channel": "PrinzDaniel89"
+      "character": "Joel Kroll",
+      "channel": "BukkitFAQ"
     },
     {
       "character": "Johannes Keller",
@@ -596,8 +638,20 @@
       "channel": "death_kenny13"
     },
     {
+      "character": "Julien York",
+      "channel": "madnessmersa"
+    },
+    {
       "character": "Junus ?",
       "channel": "RealKeuleMeule"
+    },
+    {
+      "character": "Kenni Peanut",
+      "channel": "https://www.twitch.tv/P4NCAKS"
+    },
+    {
+      "character": "Kev Kisuke",
+      "channel": "VSGaming_kev"
     },
     {
       "character": "Kevin Ronny Paschulke",
@@ -612,8 +666,8 @@
       "channel": "KenaneBanane"
     },
     {
-      "character": "Logan Hatherway",
-      "channel": "pnation"
+      "character": "Luca Bernetto",
+      "channel": "tamaaa"
     },
     {
       "character": "Lucy Determ",
@@ -622,6 +676,10 @@
     {
       "character": "Marcel ?",
       "channel": "korbito"
+    },
+    {
+      "character": "Micaela King",
+      "channel": "nevernyce"
     },
     {
       "character": "Michael Williams",
@@ -644,20 +702,32 @@
       "channel": "fenrir_rp"
     },
     {
-      "character": "Paddy von Hohenhausen",
-      "channel": "MeckPommLetsPlay"
+      "character": "Pascal SchröderGandhiLive",
+      "channel": ""
     },
     {
-      "character": "Pascal Schröder",
-      "channel": "GandhiLive"
+      "character": "Peppito ?",
+      "channel": "worek"
     },
     {
       "character": "Philip Valentini",
       "channel": "lafamiliaxxx"
     },
     {
+      "character": "Rosita Flores",
+      "channel": "MoonMermaid"
+    },
+    {
+      "character": "Roy Leanard Frehman",
+      "channel": "KELRE0N"
+    },
+    {
       "character": "Ruan Jakande",
       "channel": "GeneralDoSa"
+    },
+    {
+      "character": "Sam Bismarck",
+      "channel": "traenen_zum_fruehstueck"
     },
     {
       "character": "Sam Walker",
@@ -686,10 +756,6 @@
     {
       "character": "Theodore Jonas Magnum",
       "channel": "ElbrockerPlayCe"
-    },
-    {
-      "character": "Thijs van der Kaas",
-      "channel": "unholt"
     },
     {
       "character": "Thomas Harrison",
@@ -726,12 +792,21 @@
     {
       "character": "?",
       "channel": " w0llex_"
+    }
+  ],
+  "IAA": [{
+      "character": "Vladimir Vladimirovich Powlow",
+      "channel": "Dekarldent"
     },
     {
-      "character": "?",
-      "channel": " traenen_zum_fruehstueck"
+      "character": "Billy Brown",
+      "channel": "line___"
+    },
+    {
+      "character": "Samuel Hardear",
+      "channel": "tamaaa"
     }
-   ],
+  ],
   "Einreiseamt": [{
       "character": "Cristos Passalakis",
       "channel": "Jay_Corner"
@@ -763,6 +838,10 @@
     {
       "character": "Lydia Lovegood",
       "channel": "hardcora90"
+    },
+    {
+      "character": "Timmy Jordan Jr.",
+      "channel": "p41n_"
     }
   ]
 }
