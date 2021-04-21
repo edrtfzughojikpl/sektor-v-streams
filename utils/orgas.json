@@ -1,5 +1,6 @@
 {
-  "Police-Department": [{
+  "Police-Department": [
+    {
       "character": "Adriana Gabriela",
       "channel": "MaiJuni"
     },
@@ -20,16 +21,28 @@
       "channel": "Jay_Corner"
     },
     {
+      "character": "Brian Glitter",
+      "channel": "DieBrian"
+    },
+    {
       "character": "Claire Mitchel",
       "channel": "denella_"
     },
     {
       "character": "Danny Zücker",
-      "channel": "eiskalterjuri"
+      "channel": "trustbullets"
+    },
+    {
+      "character": "Dominik Hotch",
+      "channel": "BlueHawk_Down"
     },
     {
       "character": "Dwayne Hayford",
       "channel": "R4pst3r"
+    },
+    {
+      "character": "Frank Blomqvist",
+      "channel": "Sportis1988"
     },
     {
       "character": "Gabriel Santo",
@@ -76,16 +89,20 @@
       "channel": "Ryskal"
     },
     {
+      "character": "Oxana Reznikova",
+      "channel": "minirakete"
+    },
+    {
       "character": "Philipp Watson",
       "channel": "AVASH"
     },
     {
-      "character": "Roger Harris",
-      "channel": "Staiy"
+      "character": "Raj Bhaskar",
+      "channel": "SchEppertLIVE"
     },
     {
-      "character": "Roxana Resnikova",
-      "channel": "minirakete"
+      "character": "Roger Harris",
+      "channel": "Staiy"
     },
     {
       "character": "Sam De Ville",
@@ -119,8 +136,13 @@
       "character": "Yamamoto Oda",
       "channel": "shiro_893"
     }
-  ],
-  "Marshal-Service": [{
+   ],
+  "Marshal-Service": [
+    {
+      "character": "Artjem Medjedew",
+      "channel": "xschildkroete"
+    },
+    {
       "character": "Emilio Garcia",
       "channel": "ninozbrown"
     },
@@ -148,14 +170,15 @@
       "character": "Phellan Kell",
       "channel": "Phellan_Kell"
     }
-  ],
-  "Medics": [{
-      "character": "Björn Greif",
-      "channel": "Parapol"
+   ],
+  "Medics": [
+    {
+      "character": "Bernd Holmes",
+      "channel": "Swomsen"
     },
     {
-      "character": "Frank Blomqvist",
-      "channel": "Sportis1988"
+      "character": "Björn Greif",
+      "channel": "Parapol"
     },
     {
       "character": "Jane Glitter",
@@ -177,7 +200,7 @@
       "character": "Vincent Van de Bergh",
       "channel": "Fl3ischsalat"
     }
-  ],
+   ],
   "Justiz": [{
       "character": "Andreas Fuchs",
       "channel": "Longi_YT"
@@ -623,7 +646,8 @@
     "character": "Nacho",
     "channel": "JamesDE"
   }],
-  "Zivilisten": [{
+  "Zivilisten": [
+    {
       "character": "Ali Diaz",
       "channel": "Vaspid_"
     },
@@ -636,16 +660,8 @@
       "channel": "vaykutkrkmz_"
     },
     {
-      "character": "Bernd Holmes",
-      "channel": "Swomsen"
-    },
-    {
       "character": "Bob Cooper King",
       "channel": "whoiswolfmedia"
-    },
-    {
-      "character": "Brian Glitter",
-      "channel": "DieBrian"
     },
     {
       "character": "Carlos Alvarez",
@@ -654,10 +670,6 @@
     {
       "character": "Diandro Flores",
       "channel": "imogkegse"
-    },
-    {
-      "character": "Dominik Hotch",
-      "channel": "BlueHawk_Down"
     },
     {
       "character": "Donny Cheng",
@@ -832,10 +844,6 @@
       "channel": "lafamiliaxxx"
     },
     {
-      "character": "Raj Bhaskar",
-      "channel": "SchEppertLIVE"
-    },
-    {
       "character": "Rosita Flores",
       "channel": "MoonMermaid"
     },
@@ -858,10 +866,6 @@
     {
       "character": "Sebastian White",
       "channel": "DasXtro"
-    },
-    {
-      "character": "Sergej Abramczyk",
-      "channel": "SergejAbramczyk"
     },
     {
       "character": "Siggi Lentes",
@@ -896,20 +900,16 @@
       "channel": "Jay_Corner"
     },
     {
-      "character": "Viktor Bodrov",
-      "channel": "shrakx"
-    },
-    {
       "character": "Wesley Avens",
       "channel": "vaikzen"
     },
     {
       "character": "?",
-      "channel": " w0llex_"
+      "channel": "w0llex_"
     },
     {
       "character": "?",
-      "channel": " Shizo44"
+      "channel": "Shizo44"
     }
-  ]
+   ]
 }

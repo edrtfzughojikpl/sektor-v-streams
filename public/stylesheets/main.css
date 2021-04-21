@@ -256,7 +256,7 @@ th {
   min-width: 160px;
   z-index: 1;
   padding: 0 15px;
-  right: 0;
+  left: 0;
   overflow-y: auto;
   height: 100vh;
 }
