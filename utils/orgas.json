@@ -1,122 +1,119 @@
 {
-  "Police-Department": [
-    {
+  "Police-Department": [{
       "character": "Andrei Stroia",
-      "channel": "\t\tAnderros"
+      "channel": "Anderros"
     },
     {
       "character": "Brian Glitter",
-      "channel": "\t\tDieBrian"
+      "channel": "DieBrian"
     },
     {
       "character": "Claire Mitchel",
-      "channel": "\t\tdenella_"
+      "channel": "denella_"
     },
     {
       "character": "Danny Zücker",
-      "channel": "\t\ttrustbullets"
+      "channel": "trustbullets"
     },
     {
       "character": "Dominik Hotch",
-      "channel": "\t\tBlueHawk_Down"
+      "channel": "BlueHawk_Down"
     },
     {
       "character": "Dwayne Hayford",
-      "channel": "\t\tR4pst3r"
+      "channel": "R4pst3r"
     },
     {
       "character": "Frank Blomqvist",
-      "channel": "\t\tSportis1988"
+      "channel": "Sportis1988"
     },
     {
       "character": "Hayato Kurimo",
-      "channel": "\t\tvalkjre"
+      "channel": "valkjre"
     },
     {
       "character": "Jamal Cooper",
-      "channel": "\t\tkingsm1le"
+      "channel": "kingsm1le"
     },
     {
       "character": "James Riker",
-      "channel": "\t\tZintelinho"
+      "channel": "Zintelinho"
     },
     {
       "character": "Kofi O'Hara",
-      "channel": "\t\tHugsl4y"
+      "channel": "Hugsl4y"
     },
     {
       "character": "Luis Aiden Price",
-      "channel": "\t\tissprice"
+      "channel": "issprice"
     },
     {
       "character": "Mark Perez",
-      "channel": "\t\tSadfaceSteve"
+      "channel": "SadfaceSteve"
     },
     {
       "character": "Michael Keith",
-      "channel": "\t\tCoov"
+      "channel": "Coov"
     },
     {
       "character": "Oxana Reznikova",
-      "channel": "\t\tminirakete"
+      "channel": "minirakete"
     },
     {
       "character": "Philipp Watson",
-      "channel": "\t\tAVASH"
+      "channel": "AVASH"
     },
     {
       "character": "Raj Bhaskar",
-      "channel": "\t\tSchEppertLIVE"
+      "channel": "SchEppertLIVE"
     },
     {
       "character": "Rayman Soup",
-      "channel": "\t\tkumpeljesus"
+      "channel": "kumpeljesus"
     },
     {
       "character": "Roger Harris",
-      "channel": "\t\tStaiy"
+      "channel": "Staiy"
     },
     {
       "character": "Sophia Smith",
-      "channel": "\t\tsophiasweetheart"
+      "channel": "sophiasweetheart"
     }
-   ],
-  "Marshal-Service": [
-    {
+  ],
+  "Marshal-Service": [{
       "character": "Artjem Medjedew",
-      "channel": "\t\txschildkroete"
+      "channel": "xschildkroete"
     },
     {
       "character": "Emilio Garcia",
-      "channel": "\t\tninozbrown"
+      "channel": "ninozbrown"
     },
     {
       "character": "Jack Stahl",
-      "channel": "\t\tMasterZwerg1"
+      "channel": "MasterZwerg1"
     },
     {
       "character": "Jens Bergmann",
-      "channel": "\t\tDerDickeen"
+      "channel": "DerDickeen"
     },
     {
       "character": "Joe Cracker",
-      "channel": "\t\tterxi"
+      "channel": "terxi"
     },
     {
       "character": "Mike Lenz",
-      "channel": "\t\tMikeLowrey83"
+      "channel": "MikeLowrey83"
     },
     {
       "character": "Paddy von Hohenhausen",
-      "channel": "\t\tMeckPommLetsPlay"
+      "channel": "MeckPommLetsPlay"
     },
     {
       "character": "Phellan Kell",
-      "channel": "\t\tPhellan_Kell"
+      "channel": "Phellan_Kell"
     }
-   ],
-  "Medics": [
-    {
+  ],
+  "Medics": [{
       "character": "Bernd Holmes",
       "channel": "Swomsen"
     },
@@ -144,7 +141,7 @@
       "character": "Vincent Van de Bergh",
       "channel": "Fl3ischsalat"
     }
-   ],
+  ],
   "Justiz": [{
       "character": "Andreas Fuchs",
       "channel": "Longi_YT"
@@ -549,8 +546,7 @@
     "character": "Nacho",
     "channel": "JamesDE"
   }],
-  "Zivilisten": [
-    {
+  "Zivilisten": [{
       "character": "Ali Diaz",
       "channel": "Vaspid_"
     },
@@ -814,8 +810,8 @@
       "character": "?",
       "channel": "Shizo44"
     }
-   ],
-     "Einreiseamt": [{
+  ],
+  "Einreiseamt": [{
       "character": "Cristos Passalakis",
       "channel": "Jay_Corner"
     },
