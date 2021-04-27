@@ -1,174 +1,118 @@
 {
   "Police-Department": [
     {
-      "character": "Adriana Gabriela",
-      "channel": "MaiJuni"
-    },
-    {
-      "character": "Amy Yamada",
-      "channel": "schnattilein"
-    },
-    {
       "character": "Andrei Stroia",
-      "channel": "Anderros"
-    },
-    {
-      "character": "Aurora Quinn",
-      "channel": "Visenaa"
-    },
-    {
-      "character": "Boban Romano",
-      "channel": "Jay_Corner"
+      "channel": "\t\tAnderros"
     },
     {
       "character": "Brian Glitter",
-      "channel": "DieBrian"
+      "channel": "\t\tDieBrian"
     },
     {
       "character": "Claire Mitchel",
-      "channel": "denella_"
+      "channel": "\t\tdenella_"
     },
     {
       "character": "Danny Zücker",
-      "channel": "trustbullets"
+      "channel": "\t\ttrustbullets"
     },
     {
       "character": "Dominik Hotch",
-      "channel": "BlueHawk_Down"
+      "channel": "\t\tBlueHawk_Down"
     },
     {
       "character": "Dwayne Hayford",
-      "channel": "R4pst3r"
+      "channel": "\t\tR4pst3r"
     },
     {
       "character": "Frank Blomqvist",
-      "channel": "Sportis1988"
-    },
-    {
-      "character": "Gabriel Santo",
-      "channel": "aypi_xt"
+      "channel": "\t\tSportis1988"
     },
     {
       "character": "Hayato Kurimo",
-      "channel": "valkjre"
+      "channel": "\t\tvalkjre"
     },
     {
       "character": "Jamal Cooper",
-      "channel": "kingsm1le"
+      "channel": "\t\tkingsm1le"
     },
     {
       "character": "James Riker",
-      "channel": "Zintelinho"
-    },
-    {
-      "character": "Jason Crow",
-      "channel": "Ereko"
-    },
-    {
-      "character": "Jason Guderian",
-      "channel": "darkdanjo"
-    },
-    {
-      "character": "Jörg Bauers",
-      "channel": "PrinzDaniel89"
+      "channel": "\t\tZintelinho"
     },
     {
       "character": "Kofi O'Hara",
-      "channel": "Hugsl4y"
+      "channel": "\t\tHugsl4y"
     },
     {
       "character": "Luis Aiden Price",
-      "channel": "issprice"
+      "channel": "\t\tissprice"
     },
     {
       "character": "Mark Perez",
-      "channel": "SadfaceSteve"
+      "channel": "\t\tSadfaceSteve"
     },
     {
-      "character": "Nick O´Brien",
-      "channel": "Ryskal"
+      "character": "Michael Keith",
+      "channel": "\t\tCoov"
     },
     {
       "character": "Oxana Reznikova",
-      "channel": "minirakete"
+      "channel": "\t\tminirakete"
     },
     {
       "character": "Philipp Watson",
-      "channel": "AVASH"
+      "channel": "\t\tAVASH"
     },
     {
       "character": "Raj Bhaskar",
-      "channel": "SchEppertLIVE"
+      "channel": "\t\tSchEppertLIVE"
+    },
+    {
+      "character": "Rayman Soup",
+      "channel": "\t\tkumpeljesus"
     },
     {
       "character": "Roger Harris",
-      "channel": "Staiy"
-    },
-    {
-      "character": "Sam De Ville",
-      "channel": "Neonox"
-    },
-    {
-      "character": "Sean Grimes",
-      "channel": "Cyb3rl"
-    },
-    {
-      "character": "Sebastian Brown",
-      "channel": "Kryo1988"
-    },
-    {
-      "character": "Shane von Marienburg",
-      "channel": "FuerstWilhelm"
+      "channel": "\t\tStaiy"
     },
     {
       "character": "Sophia Smith",
-      "channel": "sophiasweetheart"
-    },
-    {
-      "character": "Tatanga Wokadeh",
-      "channel": "HaGee"
-    },
-    {
-      "character": "Tom Vidner",
-      "channel": "Tomovidner"
-    },
-    {
-      "character": "Yamamoto Oda",
-      "channel": "shiro_893"
+      "channel": "\t\tsophiasweetheart"
     }
    ],
   "Marshal-Service": [
     {
       "character": "Artjem Medjedew",
-      "channel": "xschildkroete"
+      "channel": "\t\txschildkroete"
     },
     {
       "character": "Emilio Garcia",
-      "channel": "ninozbrown"
+      "channel": "\t\tninozbrown"
     },
     {
       "character": "Jack Stahl",
-      "channel": "MasterZwerg1"
+      "channel": "\t\tMasterZwerg1"
     },
     {
       "character": "Jens Bergmann",
-      "channel": "DerDickeen"
+      "channel": "\t\tDerDickeen"
     },
     {
       "character": "Joe Cracker",
-      "channel": "terxi"
+      "channel": "\t\tterxi"
     },
     {
       "character": "Mike Lenz",
-      "channel": "MikeLowrey83"
+      "channel": "\t\tMikeLowrey83"
     },
     {
       "character": "Paddy von Hohenhausen",
-      "channel": "MeckPommLetsPlay"
+      "channel": "\t\tMeckPommLetsPlay"
     },
     {
       "character": "Phellan Kell",
-      "channel": "Phellan_Kell"
+      "channel": "\t\tPhellan_Kell"
     }
    ],
   "Medics": [
@@ -189,7 +133,7 @@
       "channel": "TheBlueEyeGaming"
     },
     {
-      "character": "Romeo ?",
+      "character": "Romeo Glitter",
       "channel": "RomeoIIDie"
     },
     {
@@ -242,51 +186,6 @@
     {
       "character": "Paco Perez",
       "channel": "don_paco_lp"
-    },
-    {
-      "character": "Valerie Kossicante Springs",
-      "channel": "SlodyTV"
-    }
-  ],
-  "Einreiseamt": [{
-      "character": "Cristos Passalakis",
-      "channel": "Jay_Corner"
-    },
-    {
-      "character": "Duke Beaver",
-      "channel": "line___"
-    },
-    {
-      "character": "Lydia Lovegood",
-      "channel": "hardcora90"
-    },
-    {
-      "character": "Michael Ferdinant",
-      "channel": "Dekarldent"
-    },
-    {
-      "character": "Mustafa ?",
-      "channel": "FurkiTV"
-    },
-    {
-      "character": "Nupsi Ferdinant",
-      "channel": "HughWinters"
-    },
-    {
-      "character": "Peter Robert",
-      "channel": "ErnstPeter"
-    },
-    {
-      "character": "Timmy Jordan Jr.",
-      "channel": "p41n_"
-    },
-    {
-      "character": "Willy",
-      "channel": "HaGee"
-    },
-    {
-      "character": "Mandy Hart",
-      "channel": "whoiswolfmedia"
     }
   ],
   "Schwarzwasser": [{
@@ -378,6 +277,10 @@
     {
       "character": "Ashanti West",
       "channel": "minirakete"
+    },
+    {
+      "character": "Earl Gustavson",
+      "channel": "Janthegun"
     },
     {
       "character": "Helmut Rakete",
@@ -911,5 +814,46 @@
       "character": "?",
       "channel": "Shizo44"
     }
-   ]
+   ],
+     "Einreiseamt": [{
+      "character": "Cristos Passalakis",
+      "channel": "Jay_Corner"
+    },
+    {
+      "character": "Duke Beaver",
+      "channel": "line___"
+    },
+    {
+      "character": "Lydia Lovegood",
+      "channel": "hardcora90"
+    },
+    {
+      "character": "Michael Ferdinant",
+      "channel": "Dekarldent"
+    },
+    {
+      "character": "Mustafa ?",
+      "channel": "FurkiTV"
+    },
+    {
+      "character": "Nupsi Ferdinant",
+      "channel": "HughWinters"
+    },
+    {
+      "character": "Peter Robert",
+      "channel": "ErnstPeter"
+    },
+    {
+      "character": "Timmy Jordan Jr.",
+      "channel": "p41n_"
+    },
+    {
+      "character": "Willy",
+      "channel": "HaGee"
+    },
+    {
+      "character": "Mandy Hart",
+      "channel": "whoiswolfmedia"
+    }
+  ]
 }
